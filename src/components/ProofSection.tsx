@@ -1,33 +1,15 @@
 const testimonials = [
   {
     quote:
-      "After nearly 50 years in business, I've worked with every kind of advertising, from newspapers to magazines, and nothing has delivered results like Waterline Growth. The team built a professional, visually compelling website and landing pages that consistently generate leads and referrals. They're organized, proactive, and transparent, checking in regularly, providing clear reports, and following through with real results. I feel confident knowing our marketing is in capable hands, and the investment has been well worth it.",
-    name: "Ken",
-    company: "Pool Builder",
+      "We went from random referrals to a steady flow of pool and backyard projects. One job covered the first few months.",
+    name: "Name",
+    company: "Company",
   },
   {
     quote:
-      "Working with Waterline Growth has been incredibly valuable. Their Facebook and Google advertising brought in high-quality leads we weren't reaching before, resulting in a noticeable increase in our conversion rate. They're responsive, explain their strategy clearly, and take the time to work closely with us. It truly feels like a partnership rather than a transaction, and the results have made the investment well worth it.",
-    name: "Matt",
-    company: "Pool Contractor",
-  },
-  {
-    quote:
-      "I couldn't be happier with my experience with Waterline Growth. The free trial was helpful, but what truly set them apart were the upfront conversations, they presented a clear, thoughtful plan that others didn't. I was initially skeptical that social media could generate real work, but they quickly proved me wrong. They stood out from the competition, helped grow my business, and earned my trust. The results speak for themselves.",
-    name: "Arnie",
-    company: "Pool Builder",
-  },
-  {
-    quote:
-      "Working with Waterline Growth has been a great experience. Their Facebook advertising is driving sales, communication has been excellent, and they've been honest and responsive every step of the way. I would absolutely recommend them.",
-    name: "Ken",
-    company: "Remodeler",
-  },
-  {
-    quote:
-      "Working with Waterline Growth has completely transformed my business. Before partnering with them, I struggled to generate consistent leads. Now, I receive a steady stream of high-quality prospects every week. Their digital marketing strategy, communication, and results have far exceeded my expectations.",
-    name: "Tracy",
-    company: "Pool Builder",
+      "I finally know what I'm getting for my ad dollars. No more black box.",
+    name: "Name",
+    company: "Company",
   },
 ];
 
@@ -64,13 +46,19 @@ export default function ProofSection() {
         <h2 className="reveal reveal-d1" style={{
           fontSize: "clamp(28px, 3.2vw, 46px)",
           fontWeight: 900, lineHeight: 1.12,
-          margin: "0 0 48px", letterSpacing: "-0.02em",
+          margin: "0 0 12px", letterSpacing: "-0.02em",
           color: "#111827",
         }}>
           What pool{" "}
           <span style={{ color: "#1565ff" }}>builders</span>{" "}
           say.
         </h2>
+        <p className="reveal reveal-d2" style={{
+          color: "#9ca3af", fontSize: "14px",
+          fontStyle: "italic", margin: "0 0 48px",
+        }}>
+          Placeholder — real quotes and screenshots replace these as they come in.
+        </p>
 
         <div style={{
           display: "grid", gap: "16px",
