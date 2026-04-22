@@ -1,11 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "#top" },
-  { label: "How It Works", href: "#how" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Book Call", href: "#book" },
+  { label: "Home", href: "/#top" },
+  { label: "How It Works", href: "/#how" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Book Call", href: "/#book" },
+];
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
 ];
 
 export default function FooterSection() {
@@ -14,7 +20,7 @@ export default function FooterSection() {
       style={{
         background: "#0d0d0d",
         borderTop: "1px solid rgba(255,255,255,0.08)",
-        padding: "64px 40px 36px",
+        padding: "64px clamp(20px, 5vw, 40px) 36px",
         fontFamily: "var(--font-barlow), Arial, sans-serif",
         color: "#ffffff",
       }}
@@ -22,9 +28,9 @@ export default function FooterSection() {
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
 
         {/* Top row */}
-        <div style={{
+        <div className="footer-grid" style={{
           display: "grid",
-          gridTemplateColumns: "minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.4fr)",
+          gridTemplateColumns: "minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr)",
           gap: "48px",
           marginBottom: "52px",
         }}>
@@ -79,13 +85,36 @@ export default function FooterSection() {
             </p>
             <nav style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               {navLinks.map((l) => (
-                <a key={l.label} href={l.href} style={{
+                <a key={l.label} href={l.href} className="footer-link" style={{
                   color: "rgba(255,255,255,0.55)",
                   fontSize: "14px", fontWeight: 500,
                   textDecoration: "none",
                 }}>
                   {l.label}
                 </a>
+              ))}
+            </nav>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <p style={{
+              color: "rgba(255,255,255,0.30)",
+              fontSize: "11px", fontWeight: 700,
+              letterSpacing: "0.14em", textTransform: "uppercase",
+              margin: "0 0 16px",
+            }}>
+              Legal
+            </p>
+            <nav style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              {legalLinks.map((l) => (
+                <Link key={l.label} href={l.href} className="footer-link" style={{
+                  color: "rgba(255,255,255,0.55)",
+                  fontSize: "14px", fontWeight: 500,
+                  textDecoration: "none",
+                }}>
+                  {l.label}
+                </Link>
               ))}
             </nav>
           </div>
@@ -101,7 +130,7 @@ export default function FooterSection() {
               Contact
             </p>
             <a
-              href="mailto:hello@waterlinegrowth.com"
+              href="mailto:team@waterlinegrowth.com"
               style={{
                 color: "rgba(255,255,255,0.55)",
                 fontSize: "14px", fontWeight: 500,
@@ -109,7 +138,7 @@ export default function FooterSection() {
                 display: "block", marginBottom: "24px",
               }}
             >
-              hello@waterlinegrowth.com
+              team@waterlinegrowth.com
             </a>
 
             <a
@@ -133,7 +162,7 @@ export default function FooterSection() {
         </div>
 
         {/* Bottom bar */}
-        <div style={{
+        <div className="footer-bottom" style={{
           borderTop: "1px solid rgba(255,255,255,0.07)",
           paddingTop: "22px",
           display: "flex",

@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "Lead-driven marketing for swimming pool contractors. We help pool builders grow with Facebook Ads, Google Ads, and digital marketing.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

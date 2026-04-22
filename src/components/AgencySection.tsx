@@ -3,26 +3,24 @@ export default function AgencySection() {
     <>
       {/* ── White section ─────────────────────────────────────── */}
       <section
-        className="reveal"
+        className="reveal wl-section-pad"
         style={{
           backgroundColor: "#f9fafb",
           borderTop: "1px solid #e5e7eb",
-          padding: "72px 40px 80px",
           textAlign: "center",
         }}
       >
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+        <div className="wl-container" style={{ maxWidth: "1400px" }}>
 
           <h2
             style={{
               fontWeight: 900,
               textTransform: "uppercase",
-              lineHeight: 1.1,
+              lineHeight: 1.15,
               letterSpacing: "-0.01em",
               marginBottom: "28px",
-              fontSize: "clamp(20px, 3.1vw, 50px)",
+              fontSize: "clamp(22px, 5vw, 50px)",
               color: "#111827",
-              whiteSpace: "nowrap",
             }}
           >
             <span style={{ color: "#111827" }}>Swimming Pool Contractors </span>
@@ -47,30 +45,6 @@ export default function AgencySection() {
 
         </div>
       </section>
-
-      {/* ── Blue highlight strip ────────────────────────────── */}
-      <div
-        style={{
-          background: "#1565ff",
-          padding: "20px 40px",
-          textAlign: "center",
-        }}
-      >
-        <p
-          style={{
-            color: "#ffffff",
-            fontSize: "15.5px",
-            fontWeight: 600,
-            lineHeight: 1.6,
-            maxWidth: "960px",
-            margin: "0 auto",
-          }}
-        >
-          When you work with{" "}
-          <strong style={{ fontWeight: 800 }}>Waterline Growth</strong>, you&apos;re working with a
-          team that truly understands the swimming pool industry inside and out.
-        </p>
-      </div>
     </>
   );
 }

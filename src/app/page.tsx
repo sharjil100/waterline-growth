@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AgencySection from "@/components/AgencySection";
 import MarqueeStrip from "@/components/MarqueeStrip";
@@ -16,9 +17,11 @@ import FooterSection from "@/components/FooterSection";
 export default function Home() {
   return (
     <>
+      <Navbar />
       <HeroSection />
-      <AgencySection />
       <MarqueeStrip />
+      <AgencySection />
+      <MarqueeStrip reverse />
       <WhoThisIsForSection />
       <ProblemSection />
       <HowItWorksSection />

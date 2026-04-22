@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import Image from "next/image";
 import PoolWater from "./PoolWater";
+import { NAVBAR_HEIGHT } from "./navbarConstants";
 
 /* ── Orbit delay helper ──────────────────────────────────── */
 function delay(angle: number, speed: number) {
@@ -38,25 +38,23 @@ function OrbitItem({
   );
 }
 
-/* ── Channel pill with logo + label ──────────────────────── */
+/* ── Channel pill — flat, clean, grounded ──────────────── */
 function ChannelPill({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div style={{
-      width: "100%", height: "100%", borderRadius: "16px",
-      background: "rgba(6,20,60,0.88)",
-      border: "1px solid rgba(21,101,255,0.35)",
+      width: "100%", height: "100%", borderRadius: "12px",
+      background: "#ffffff",
+      border: "1px solid rgba(20,40,80,0.08)",
       display: "flex", flexDirection: "column",
       alignItems: "center", justifyContent: "center",
-      color: "#1565ff",
       gap: "2px",
-      boxShadow: "0 6px 24px rgba(0,0,0,0.30), 0 0 16px rgba(255,255,255,0.08)",
-      backdropFilter: "blur(12px)",
+      boxShadow: "0 2px 6px rgba(20,40,80,0.05), 0 8px 20px rgba(20,40,80,0.04)",
     }}>
       {children}
       <span style={{
-        color: "rgba(255,255,255,0.82)",
-        fontSize: "9px", fontWeight: 700,
-        letterSpacing: "0.05em",
+        color: "rgba(20,40,80,0.55)",
+        fontSize: "8.5px", fontWeight: 600,
+        letterSpacing: "0.06em",
         textTransform: "uppercase",
         marginTop: "1px",
       }}>
@@ -68,34 +66,34 @@ function ChannelPill({ label, children }: { label: string; children: ReactNode }
 
 /* ── Marketing channel SVG icons (monochrome blue) ──────── */
 const FacebookIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="#4a9eff">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="#2f7dd8">
     <path d="M22 12A10 10 0 0 0 2 12a10 10 0 0 0 8.44 9.88V14.89H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z" />
   </svg>
 );
 
 const InstagramIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f7dd8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <rect x="3" y="3" width="18" height="18" rx="5" />
     <circle cx="12" cy="12" r="4" />
-    <circle cx="17.5" cy="6.5" r="1.1" fill="#4a9eff" />
+    <circle cx="17.5" cy="6.5" r="1.1" fill="#2f7dd8" />
   </svg>
 );
 
 const TwitterIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="#4a9eff">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="#2f7dd8">
     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2s9 5 20 5a9.5 9.5 0 0 0-9-5.5c4.75 2.25 7-7 7-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
   </svg>
 );
 
 const LinkedInIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="#4a9eff">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="#2f7dd8">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
     <circle cx="4" cy="4" r="2" />
   </svg>
 );
 
 const GoogleIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f7dd8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M21 12.5a9 9 0 1 1-2.6-6.3" />
     <path d="M21 4v5h-5" />
     <path d="M12 12h5.5" />
@@ -103,27 +101,27 @@ const GoogleIcon = () => (
 );
 
 const ShieldCheckIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f7dd8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
     <path d="m9 12 2 2 4-4" />
   </svg>
 );
 
 const MapPinIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f7dd8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" />
     <circle cx="12" cy="10" r="3" />
   </svg>
 );
 
 const LeadIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f7dd8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 );
 
 const AnalyticsIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f7dd8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
     <rect x="16" y="5"  width="4" height="15" rx="1" />
     <rect x="10" y="9"  width="4" height="11" rx="1" />
     <rect x="4"  y="13" width="4" height="7"  rx="1" />
@@ -132,28 +130,26 @@ const AnalyticsIcon = () => (
 
 /* ── Full orbital system ─────────────────────────────────── */
 function OrbitalSystem() {
-  const SIZE    = 640;
-  const POOL_W  = 380;
-  const POOL_H  = 260;
-  const POOL_R  = 30;
-  const R1      = 262;
-  const R2      = 324;
-  const PILL_SZ = 64;
+  const SIZE    = 540;
+  const POOL_W  = 420;
+  const POOL_H  = 280;
+  const R1      = 215;
+  const R2      = 268;
+  const PILL_SZ = 54;
 
   return (
     <div style={{
       position: "relative", width: SIZE, height: SIZE, flexShrink: 0,
       animation: "floatY 7s ease-in-out infinite",
     }}>
-      {/* Orbit ring borders */}
+      {/* Orbit ring borders — faint, static, just a hint of path */}
       {[R1, R2].map((r) => (
         <div key={r} style={{
           position: "absolute",
           top: SIZE / 2 - r, left: SIZE / 2 - r,
           width: r * 2, height: r * 2,
           borderRadius: "50%",
-          border: "1px solid rgba(21,101,255,0.22)",
-          animation: "ringPulse 4s ease-in-out infinite",
+          border: "1px dashed rgba(20,40,80,0.08)",
         }} />
       ))}
 
@@ -163,29 +159,31 @@ function OrbitalSystem() {
         top:  SIZE / 2 - POOL_H / 2,
         left: SIZE / 2 - POOL_W / 2,
       }}>
-        <PoolWater width={POOL_W} height={POOL_H} radius={POOL_R}>
+        <PoolWater width={POOL_W} height={POOL_H}>
           <span style={{
-            fontSize: "11px", fontWeight: 700,
-            color: "rgba(200,220,255,0.82)",
-            letterSpacing: "0.18em",
+            fontSize: "10.5px", fontWeight: 700,
+            color: "rgba(230,245,255,0.85)",
+            letterSpacing: "0.22em",
             textTransform: "uppercase",
-            marginBottom: "8px",
+            marginBottom: "10px",
+            textShadow: "0 1px 3px rgba(0,20,50,0.45)",
           }}>
             All Your Leads
           </span>
           <span style={{
-            fontSize: "44px", fontWeight: 900,
+            fontSize: "42px", fontWeight: 900,
             color: "#ffffff", lineHeight: 1,
             letterSpacing: "-0.02em",
-            textShadow: "0 2px 30px rgba(21,101,255,0.65)",
+            textShadow: "0 2px 6px rgba(0,20,50,0.55), 0 1px 2px rgba(0,15,40,0.6)",
           }}>
             ONE PIPELINE
           </span>
           <span style={{
-            fontSize: "11.5px", fontWeight: 600,
-            color: "rgba(255,255,255,0.78)",
-            letterSpacing: "0.08em",
-            marginTop: "10px",
+            fontSize: "11px", fontWeight: 600,
+            color: "rgba(235,248,255,0.85)",
+            letterSpacing: "0.10em",
+            marginTop: "12px",
+            textShadow: "0 1px 3px rgba(0,20,50,0.55)",
           }}>
             Facebook · Instagram · X · LinkedIn · Google
           </span>
@@ -205,66 +203,6 @@ function OrbitalSystem() {
       <OrbitItem angle={225} speed={38} radius={R2} size={PILL_SZ} dir="ccw"><ChannelPill label="Tracking"><AnalyticsIcon /></ChannelPill></OrbitItem>
       <OrbitItem angle={315} speed={38} radius={R2} size={PILL_SZ} dir="ccw"><ChannelPill label="LSA"><ShieldCheckIcon /></ChannelPill></OrbitItem>
     </div>
-  );
-}
-
-/* ── Navbar ──────────────────────────────────────────────── */
-function Navbar() {
-  return (
-    <nav style={{
-      position: "relative", zIndex: 50, width: "100%",
-      background: "#0d0d0d",
-    }}>
-      <div style={{
-        maxWidth: "1380px", margin: "0 auto", padding: "0 48px",
-        height: "72px", display: "flex", alignItems: "center", justifyContent: "space-between",
-      }}>
-
-        {/* Logo — inverted to white on black nav */}
-        <a href="#top" style={{ display: "flex", alignItems: "center", flexShrink: 0, textDecoration: "none" }}>
-          <Image
-            src="/logo (1).svg"
-            alt="Waterline Growth"
-            width={160}
-            height={50}
-            priority
-            style={{
-              height: "56px",
-              width: "auto",
-              objectFit: "contain",
-              filter: "brightness(0) invert(1)",
-            }}
-          />
-        </a>
-
-        {/* Nav links */}
-        <div style={{ display: "flex", alignItems: "center", gap: "32px" }}>
-          {[
-            { label: "How It Works", href: "#how" },
-            { label: "What You Get",  href: "#get" },
-            { label: "Pricing",       href: "#pricing" },
-            { label: "FAQ",           href: "#faq" },
-          ].map(({ label, href }) => (
-            <a key={label} href={href} className="nav-link" style={{
-              color: "rgba(255,255,255,0.72)", fontSize: "14px", fontWeight: 500,
-              textDecoration: "none", letterSpacing: "0.02em",
-            }}>
-              {label}
-            </a>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <a href="#book" className="nav-cta" style={{
-          background: "#1565ff", color: "#ffffff",
-          padding: "10px 22px", borderRadius: "8px",
-          fontWeight: 700, fontSize: "14px", letterSpacing: "0.02em",
-          textDecoration: "none", whiteSpace: "nowrap",
-        }}>
-          Book Pipeline Call
-        </a>
-      </div>
-    </nav>
   );
 }
 
@@ -303,6 +241,8 @@ export default function HeroSection() {
   return (
     <section id="top" style={{
       minHeight: "100vh",
+      paddingTop: `${NAVBAR_HEIGHT + 88}px`,
+      paddingBottom: "64px",
       background: [
         "radial-gradient(ellipse at 72% 50%, rgba(21,101,255,0.10) 0%, transparent 55%)",
         "linear-gradient(148deg, #ffffff 0%, #f6f9ff 60%, #eef4ff 100%)",
@@ -312,19 +252,13 @@ export default function HeroSection() {
       overflow: "hidden",
     }}>
 
-      <Navbar />
-
       {/* Two-column layout */}
-      <div style={{
+      <div className="wl-container wl-two-col hero-inner" style={{
         flex: 1,
-        maxWidth: "1380px", margin: "0 auto", padding: "0 48px",
-        width: "100%",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        gap: "48px",
       }}>
 
         {/* LEFT */}
-        <div style={{ flex: "0 0 auto", maxWidth: "540px", display: "flex", flexDirection: "column" }}>
+        <div className="hero-text" style={{ flex: "0 0 auto", maxWidth: "540px", display: "flex", flexDirection: "column" }}>
 
           <div style={{
             display: "inline-flex", alignItems: "center", gap: "8px",
@@ -397,11 +331,49 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flex: "1 1 auto" }}>
+        <div className="hero-orbit-wrap" style={{ display: "flex", alignItems: "center", justifyContent: "center", flex: "1 1 auto" }}>
           <OrbitalSystem />
         </div>
 
       </div>
+
+      {/* Component-scoped responsive safety net — guarantees stacking */}
+      <style>{`
+        @media (max-width: 960px) {
+          .hero-inner {
+            flex-direction: column !important;
+            align-items: stretch !important;
+            gap: 40px !important;
+          }
+          .hero-inner > .hero-text {
+            max-width: 100% !important;
+            width: 100% !important;
+            flex: 0 0 auto !important;
+          }
+          .hero-inner > .hero-orbit-wrap {
+            width: 100% !important;
+            flex: 0 0 auto !important;
+            height: 360px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            position: relative;
+          }
+          .hero-inner > .hero-orbit-wrap > * {
+            transform: scale(0.60);
+            transform-origin: center center;
+          }
+        }
+        @media (max-width: 640px) {
+          .hero-inner > .hero-orbit-wrap { height: 260px !important; }
+          .hero-inner > .hero-orbit-wrap > * { transform: scale(0.44); }
+        }
+        @media (max-width: 420px) {
+          .hero-inner > .hero-orbit-wrap { height: 210px !important; }
+          .hero-inner > .hero-orbit-wrap > * { transform: scale(0.34); }
+        }
+      `}</style>
     </section>
   );
 }

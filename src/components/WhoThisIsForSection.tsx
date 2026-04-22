@@ -16,18 +16,18 @@ export default function WhoThisIsForSection() {
   return (
     <section
       id="who"
+      className="wl-section-pad who-section"
       style={{
         background: "#f5f5f5",
         borderTop: "1px solid #e5e7eb",
-        padding: "96px 40px",
         fontFamily: "var(--font-barlow), Arial, sans-serif",
       }}
     >
-      <div style={{
-        maxWidth: "1200px", margin: "0 auto",
+      <div className="wl-container who-grid" style={{
+        maxWidth: "1200px",
         display: "grid",
         gridTemplateColumns: "minmax(0, 1fr) minmax(0, 420px)",
-        gap: "64px",
+        gap: "clamp(32px, 6vw, 64px)",
         alignItems: "center",
       }}>
         {/* Copy */}
@@ -79,7 +79,7 @@ export default function WhoThisIsForSection() {
         </div>
 
         {/* Pool image */}
-        <div className="reveal reveal-d2" style={{
+        <div className="reveal reveal-d2 who-image" style={{
           position: "relative",
           borderRadius: "20px",
           overflow: "hidden",
@@ -120,6 +120,26 @@ export default function WhoThisIsForSection() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 900px) {
+          .who-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .who-image {
+            aspect-ratio: 16 / 10 !important;
+            max-height: 340px;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+        @media (max-width: 520px) {
+          .who-image {
+            aspect-ratio: 4 / 3 !important;
+            max-height: 260px;
+          }
+        }
+      `}</style>
     </section>
   );
 }

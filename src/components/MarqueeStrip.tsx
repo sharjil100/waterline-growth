@@ -19,7 +19,7 @@ const Dot = () => (
   </svg>
 );
 
-export default function MarqueeStrip() {
+export default function MarqueeStrip({ reverse = false }: { reverse?: boolean } = {}) {
   /* Double items for seamless loop */
   const doubled = [...items, ...items];
 
@@ -40,6 +40,7 @@ export default function MarqueeStrip() {
           alignItems: "center",
           width: "max-content",
           gap: 0,
+          animationDirection: reverse ? "reverse" : "normal",
         }}
       >
         {doubled.map((item, i) => (

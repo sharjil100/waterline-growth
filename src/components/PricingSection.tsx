@@ -124,7 +124,7 @@ export default function PricingSection() {
         </div>
 
         {/* ── 3-column grid ───────────────────────────── */}
-        <div style={{
+        <div className="pricing-grid" style={{
           display: "grid",
           gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1fr)",
           gap: "18px",
@@ -132,7 +132,7 @@ export default function PricingSection() {
         }}>
 
           {/* LEFT — Feature cards */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <div className="pricing-left" style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {leftFeatures.map((f) => (
               <div key={f.title} className="card-lift" style={{
                 background: "#ffffff",
@@ -165,7 +165,7 @@ export default function PricingSection() {
           </div>
 
           {/* CENTER — Dark featured card */}
-          <div style={{
+          <div className="pricing-featured" style={{
             background: "#111827",
             borderRadius: "20px",
             padding: "32px 28px",
@@ -253,7 +253,7 @@ export default function PricingSection() {
           </div>
 
           {/* RIGHT — Two callout cards */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+          <div className="pricing-right" style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
 
             {/* Blue accent card (mirrors yellow in reference) */}
             <div style={{
@@ -313,6 +313,19 @@ export default function PricingSection() {
 
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 900px) {
+          .pricing-grid {
+            grid-template-columns: 1fr !important;
+            max-width: 560px;
+            margin: 0 auto;
+          }
+          .pricing-featured { order: -1; }
+          .pricing-left { order: 1; }
+          .pricing-right { order: 2; }
+        }
+      `}</style>
     </section>
   );
 }

@@ -10,6 +10,179 @@
   box-sizing: border-box;
 }
 
+/* ── Smooth anchor scroll with fixed navbar offset ───────── */
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+:target,
+section[id],
+[id^="book"],
+[id^="how"],
+[id^="get"],
+[id^="pricing"],
+[id^="faq"],
+[id="top"] {
+  scroll-margin-top: 88px;
+}
+
+/* ── Responsive container & section helpers ──────────────── */
+.wl-container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-left: clamp(20px, 5vw, 48px);
+  padding-right: clamp(20px, 5vw, 48px);
+}
+.wl-section-pad {
+  padding-top: clamp(64px, 10vw, 120px);
+  padding-bottom: clamp(64px, 10vw, 120px);
+}
+
+/* Stack two-column layouts on tablet + mobile */
+.wl-two-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(32px, 4vw, 48px);
+}
+@media (max-width: 960px) {
+  .wl-two-col {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .wl-two-col > * {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 auto !important;
+  }
+}
+
+/* Stack grids on mobile — generic 2-col responsive */
+.wl-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(32px, 4vw, 64px);
+}
+@media (max-width: 900px) {
+  .wl-grid-2 { grid-template-columns: 1fr; }
+}
+
+/* Generic flex wrap */
+.wl-wrap { flex-wrap: wrap; }
+
+/* Mobile navbar: collapse link list */
+@media (max-width: 760px) {
+  .nav-links { display: none !important; }
+  .nav-cta { padding: 8px 14px !important; font-size: 12.5px !important; }
+}
+@media (max-width: 520px) {
+  .nav-logo { height: 40px !important; }
+}
+
+/* Hero-specific responsive sizing */
+@media (max-width: 960px) {
+  .hero-text { text-align: left; }
+  .hero-inner {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    gap: clamp(40px, 6vw, 56px) !important;
+  }
+  .hero-orbit-wrap {
+    width: 100% !important;
+    height: 380px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: visible !important;
+    flex: 0 0 auto !important;
+  }
+  .hero-orbit-wrap > * {
+    transform: scale(0.70);
+    transform-origin: center center;
+  }
+}
+@media (max-width: 640px) {
+  .hero-orbit-wrap { height: 300px !important; }
+  .hero-orbit-wrap > * { transform: scale(0.56); }
+}
+@media (max-width: 420px) {
+  .hero-orbit-wrap { height: 240px !important; }
+  .hero-orbit-wrap > * { transform: scale(0.44); }
+}
+
+/* Footer grid collapse */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)) !important; gap: 32px !important; }
+}
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 36px 32px !important; }
+}
+@media (max-width: 520px) {
+  .footer-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .footer-bottom { flex-direction: column; align-items: flex-start !important; }
+}
+
+/* How-it-works grid collapse */
+@media (max-width: 900px) {
+  .how-grid { grid-template-columns: 1fr !important; }
+  .how-sticky { position: static !important; height: 340px !important; }
+}
+
+/* Prevent horizontal overflow everywhere */
+html, body { overflow-x: hidden; max-width: 100%; }
+
+/* ── Aggressive responsive fallback for inline-styled sections ── */
+/* Reduce section padding fluidly at smaller viewports */
+@media (max-width: 1024px) {
+  section { padding-left: clamp(16px, 5vw, 40px) !important; padding-right: clamp(16px, 5vw, 40px) !important; }
+}
+@media (max-width: 760px) {
+  /* Hero is excluded — it needs to clear the fixed navbar */
+  section:not(#top) {
+    padding-top: clamp(56px, 12vw, 96px) !important;
+    padding-bottom: clamp(56px, 12vw, 96px) !important;
+  }
+  /* Hero always keeps navbar clearance + breathing room */
+  section#top {
+    padding-top: 140px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
+/* Prevent text overflow on small screens */
+@media (max-width: 520px) {
+  h1, h2, h3 { overflow-wrap: anywhere; }
+}
+
+/* Force images & videos to shrink within containers */
+img, svg, video { max-width: 100%; height: auto; }
+
+/* Responsive grid helpers — opt-in by class */
+.wl-grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 32px); }
+.wl-grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(20px, 3vw, 32px); }
+@media (max-width: 960px) {
+  .wl-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wl-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .wl-grid-3, .wl-grid-4 { grid-template-columns: 1fr; }
+}
+
+/* Auto-collapse any inline 3-column grid by class */
+.wl-collapse-900 { }
+@media (max-width: 900px) {
+  .wl-collapse-900 { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 900px) {
+  .wl-collapse-2-900 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 560px) {
+  .wl-collapse-2-900 { grid-template-columns: 1fr !important; }
+}
+
 /* ── Orbital rotation ────────────────────────────────────── */
 @keyframes orbitCW  { to { transform: rotate( 360deg); } }
 @keyframes orbitCCW { to { transform: rotate(-360deg); } }

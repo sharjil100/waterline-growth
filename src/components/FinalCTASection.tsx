@@ -31,13 +31,14 @@ export default function FinalCTASection() {
       />
 
       <div
+        className="wl-collapse-900"
         style={{
           position: "relative",
           maxWidth: "1280px",
           margin: "0 auto",
           display: "grid",
-          gap: "72px",
-          gridTemplateColumns: "minmax(0, 1fr) minmax(520px, 580px)",
+          gap: "clamp(32px, 6vw, 72px)",
+          gridTemplateColumns: "minmax(0, 1fr) minmax(0, 580px)",
           alignItems: "center",
         }}
       >
