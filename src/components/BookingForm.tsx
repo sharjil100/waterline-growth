@@ -52,6 +52,7 @@ export default function BookingForm() {
       style={{
         width: "100%",
         maxWidth: "480px",
+        margin: "0 auto",
         background: "#ffffff",
         borderRadius: "20px",
         padding: "32px 30px",

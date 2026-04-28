@@ -241,7 +241,7 @@ export default function HeroSection() {
   return (
     <section id="top" style={{
       minHeight: "100vh",
-      paddingTop: `${NAVBAR_HEIGHT + 88}px`,
+      paddingTop: `${NAVBAR_HEIGHT + 32}px`,
       paddingBottom: "64px",
       background: [
         "radial-gradient(ellipse at 72% 50%, rgba(21,101,255,0.10) 0%, transparent 55%)",
