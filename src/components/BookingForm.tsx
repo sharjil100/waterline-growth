@@ -40,11 +40,43 @@ const ArrowIcon = () => (
 
 export default function BookingForm() {
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: wire to real endpoint (Calendly, Formspree, or your own API route)
-    setSent(true);
+    if (submitting) return;
+    setSubmitting(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") || "").trim(),
+      phone: String(data.get("phone") || "").trim(),
+      email: String(data.get("email") || "").trim(),
+      company: String(data.get("company") || "").trim(),
+      submittedAt: new Date().toISOString(),
+      pageUrl: typeof window !== "undefined" ? window.location.href : "",
+    };
+
+    try {
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+      setSent(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -122,8 +154,22 @@ export default function BookingForm() {
           </div>
 
           <div style={{ marginBottom: "16px" }}>
+            <label htmlFor="bf-email" style={labelStyle}>
+              Email <span style={{ color: "#1565ff" }}>*</span>
+            </label>
+            <input
+              id="bf-email"
+              name="email"
+              type="email"
+              required
+              placeholder="mike@johnsonpools.com"
+              style={inputStyle}
+            />
+          </div>
+
+          <div style={{ marginBottom: "22px" }}>
             <label htmlFor="bf-company" style={labelStyle}>
-              Company Name <span style={{ color: "#1565ff" }}>*</span>
+              Business Name <span style={{ color: "#1565ff" }}>*</span>
             </label>
             <input
               id="bf-company"
@@ -135,21 +181,9 @@ export default function BookingForm() {
             />
           </div>
 
-          <div style={{ marginBottom: "22px" }}>
-            <label htmlFor="bf-area" style={labelStyle}>
-              Service Area
-            </label>
-            <input
-              id="bf-area"
-              name="area"
-              type="text"
-              placeholder="Dallas, TX"
-              style={inputStyle}
-            />
-          </div>
-
           <button
             type="submit"
+            disabled={submitting}
             className="btn-primary"
             style={{
               width: "100%",
@@ -165,15 +199,30 @@ export default function BookingForm() {
               fontWeight: 800,
               fontSize: "14.5px",
               letterSpacing: "0.01em",
-              cursor: "pointer",
+              cursor: submitting ? "not-allowed" : "pointer",
+              opacity: submitting ? 0.7 : 1,
               fontFamily: "inherit",
-              animation: "ctaGlow 3s ease-in-out infinite",
+              animation: submitting ? "none" : "ctaGlow 3s ease-in-out infinite",
             }}
           >
             <PhoneIcon />
-            Book My Setup Call
+            {submitting ? "Sending…" : "Book My Setup Call"}
             <ArrowIcon />
           </button>
+
+          {error && (
+            <p
+              style={{
+                textAlign: "center",
+                color: "#c81e1e",
+                fontSize: "13px",
+                fontWeight: 600,
+                margin: "12px 0 0",
+              }}
+            >
+              {error}
+            </p>
+          )}
 
           <p
             style={{
