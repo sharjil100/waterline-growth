@@ -42,16 +42,17 @@ export default function Navbar() {
 
           <a href="/#top" style={{ display: "flex", alignItems: "center", flexShrink: 0, textDecoration: "none" }}>
             <Image
-              src="/nav-logo.png"
+              src="/logo (1).svg"
               alt="Waterline Growth"
-              width={400}
-              height={120}
+              width={160}
+              height={50}
               priority
               className="nav-logo"
               style={{
                 height: "56px",
                 width: "auto",
                 objectFit: "contain",
+                filter: "brightness(0) invert(1)",
               }}
             />
           </a>
