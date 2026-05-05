@@ -55,13 +55,12 @@ export default function BookingForm() {
       name: String(data.get("name") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       email: String(data.get("email") || "").trim(),
-      company: String(data.get("company") || "").trim(),
-      submittedAt: new Date().toISOString(),
+      companyName: String(data.get("company") || "").trim(),
       pageUrl: typeof window !== "undefined" ? window.location.href : "",
     };
 
     try {
-      const res = await fetch("/api/booking", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
