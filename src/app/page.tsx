@@ -4,6 +4,7 @@ import AgencySection from "@/components/AgencySection";
 import MarqueeStrip from "@/components/MarqueeStrip";
 import WhoThisIsForSection from "@/components/WhoThisIsForSection";
 import ProblemSection from "@/components/ProblemSection";
+import MissedCallRevenueSection from "@/components/MissedCallRevenueSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import PoolShowcaseSection from "@/components/PoolShowcaseSection";
 import WhatYouGetSection from "@/components/WhatYouGetSection";
@@ -24,6 +25,7 @@ export default function Home() {
       <MarqueeStrip reverse />
       <WhoThisIsForSection />
       <ProblemSection />
+      <MissedCallRevenueSection />
       <HowItWorksSection />
       <PoolShowcaseSection />
       <WhatYouGetSection />
