@@ -68,9 +68,9 @@ export default function FinalCTASection() {
               color: "#ffffff",
             }}
           >
-            Stop Sending New Pool Builds To{" "}
+            Catch Every Call. Earn Every{" "}
             <span style={{ color: "rgba(150,210,255,1)" }}>
-              Voicemail.
+              5-Star Review.
             </span>
           </h2>
 
@@ -82,9 +82,10 @@ export default function FinalCTASection() {
               margin: "0 0 28px",
             }}
           >
-            One short call and your AI receptionist is live the same day —
-            picking up missed calls, flagging hot leads, and texting you
-            summaries while you stay focused on the job site.
+            One short call and you&rsquo;re live the same day — your AI
+            receptionist picking up missed calls and flagging hot leads, while
+            the review system quietly turns finished projects into 5-star
+            Google reviews.
           </p>
 
           <p
@@ -113,7 +114,7 @@ export default function FinalCTASection() {
               "Connect a smart number to your Google listing and website",
               "Configure how the receptionist handles your incoming calls",
               "Set up hot lead tagging for new builds and major remodels",
-              "Send a test summary text so you see exactly what you'll get",
+              "Wire up automated 5-star review follow-up after every job",
               "Hand it off — live the same day, no setup fee",
             ].map((t) => (
               <li

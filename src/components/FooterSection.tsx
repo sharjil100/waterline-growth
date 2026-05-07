@@ -59,8 +59,9 @@ export default function FooterSection() {
               margin: "0 0 16px",
             }}>
               Waterline Growth helps pool builders and remodelers capture every
-              missed call and flag new builds and major remodels as hot leads —
-              all for one flat monthly fee.
+              missed call, flag new builds and major remodels as hot leads, and
+              turn finished projects into 5-star Google reviews — all for one
+              flat monthly fee.
             </p>
             <p style={{
               color: "rgba(255,255,255,0.25)",
@@ -70,7 +71,7 @@ export default function FooterSection() {
               textTransform: "uppercase",
               margin: 0,
             }}>
-              AI Receptionist · Built for pools
+              AI Receptionist + 5-Star Reviews · Built for pools
             </p>
           </div>
 
@@ -177,7 +178,7 @@ export default function FooterSection() {
               &copy; 2026 Waterline Growth. All rights reserved.
             </p>
             <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "13px", margin: 0 }}>
-              AI receptionist &middot; Pool builders &amp; remodelers &middot; Month-to-month
+              AI receptionist &amp; 5-star reviews &middot; Pool builders &amp; remodelers &middot; Month-to-month
             </p>
           </div>
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>

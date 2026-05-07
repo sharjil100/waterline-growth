@@ -61,6 +61,22 @@ const steps: Step[] = [
       </svg>
     ),
   },
+  {
+    kicker: "5-Star Reviews",
+    title: "Finished projects turn into Google reviews",
+    body: "After every completed pool build, remodel, or service job, we check in with the homeowner, confirm they're happy, and send a one-tap Google review link. Quiet follow-up reminders catch the ones who meant to leave a review but got busy.",
+    bullets: [
+      "Automated post-job satisfaction check-in",
+      "One-tap Google review link sent by text",
+      "Smart follow-up reminders for non-responders",
+      "Built-in filter so only happy customers get the review prompt",
+    ],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    ),
+  },
 ];
 
 function GhostNumber({ n }: { n: number }) {
@@ -130,7 +146,7 @@ export default function HowItWorksSection() {
             maxWidth: "920px",
           }}
         >
-          From Missed Call To Hot Lead —{" "}
+          From Missed Call To 5-Star Review —{" "}
           <span
             style={{
               background: "linear-gradient(90deg, #1565ff 0%, #3ea3ff 100%)",
@@ -139,7 +155,7 @@ export default function HowItWorksSection() {
               backgroundClip: "text",
             }}
           >
-            Four Steps, Live Same Day.
+            Five Steps, Live Same Day.
           </span>
         </h2>
 
@@ -153,8 +169,9 @@ export default function HowItWorksSection() {
             maxWidth: "640px",
           }}
         >
-          Setup takes one short call. After that, every missed call is captured,
-          tagged, and texted to you — automatically.
+          Setup takes one short call. After that, every missed call is
+          captured, tagged, and texted to you — and every finished project
+          turns into a 5-star Google review automatically.
         </p>
 
         {/* Steps spine */}

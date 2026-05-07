@@ -75,10 +75,11 @@ const features = [
   "Instant text summary to your phone",
   "After-hours and weekend coverage",
   "Spam and vendor call filtering",
-  "Full call log with recordings",
+  "Automated 5-star Google review follow-up",
+  "Smart reminders for non-responders",
   "Built specifically for the pool industry",
-  "No setup fee",
-  "No long-term contract",
+  "Full call log with recordings",
+  "No setup fee · Live same day",
   "Month-to-month, cancel anytime",
 ];
 
@@ -122,9 +123,10 @@ export default function PricingSection() {
             margin: "0 auto", maxWidth: "560px",
             lineHeight: 1.6,
           }}>
-            One flat monthly fee. No setup fees, no contracts, no per-call
-            charges. Catching just one missed new build or major remodel pays
-            for the service many times over.
+            One flat monthly fee for the AI receptionist and the review
+            follow-up system. No setup fees, no contracts, no per-call charges.
+            Catching one missed new build — or earning a few extra 5-star
+            Google reviews — pays for the service many times over.
           </p>
         </div>
 
@@ -186,7 +188,7 @@ export default function PricingSection() {
                 padding: "7px 20px", borderRadius: "9999px",
                 display: "inline-block",
               }}>
-                AI Receptionist
+                AI Receptionist + Reviews
               </span>
             </div>
 
@@ -303,15 +305,16 @@ export default function PricingSection() {
                 fontSize: "14px", lineHeight: 1.65, marginBottom: "12px",
               }}>
                 You don&apos;t hire a $4,000/mo receptionist. You don&apos;t
-                buy generic call-center scripts. You don&apos;t lose nights and
-                weekends to voicemail.
+                chase down customers asking for reviews. You don&apos;t lose
+                nights and weekends to voicemail.
               </p>
               <p style={{
                 color: "#111827",
                 fontSize: "14.5px", fontWeight: 700, lineHeight: 1.55, margin: 0,
               }}>
-                You get a receptionist that picks up every call you can&apos;t,
-                and texts you the ones worth calling back first.
+                You get an AI receptionist that picks up every call you
+                can&apos;t — and a review system that turns finished projects
+                into 5-star Google reviews on autopilot.
               </p>
             </div>
 

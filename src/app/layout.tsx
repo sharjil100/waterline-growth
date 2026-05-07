@@ -9,9 +9,9 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Waterline Growth - AI Receptionist For Pool Builders & Remodelers",
+  title: "Waterline Growth - AI Receptionist + 5-Star Reviews For Pool Builders & Remodelers",
   description:
-    "Stop losing $20k–$300k pool projects to voicemail. Our AI receptionist captures every missed call, flags new builds and major remodels as hot leads, and texts you the summary. Flat $397/mo, no setup fee, live the same day.",
+    "Stop losing $20k–$300k pool projects to voicemail. Our AI receptionist captures every missed call, flags new builds and major remodels as hot leads, and turns finished projects into 5-star Google reviews. Flat $397/mo, no setup fee, live the same day.",
 };
 
 export const viewport = {

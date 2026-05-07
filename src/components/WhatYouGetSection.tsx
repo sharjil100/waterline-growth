@@ -7,6 +7,10 @@ const items = [
   "Instant text summary delivered to your phone",
   "After-hours, weekend, and overflow call coverage",
   "Spam and vendor calls filtered out",
+  "Automated 5-star Google review follow-up after every job",
+  "Smart review reminders for customers who didn't reply",
+  "Filter that prompts only happy customers for reviews",
+  "Fewer \"no one answered\" negative reviews",
   "Simple call log with full recordings",
   "Built specifically for the pool industry",
   "No setup fee — live the same day",
@@ -53,8 +57,8 @@ export default function WhatYouGetSection() {
               color: "#0b1e3b",
             }}
           >
-            Everything You Need To Stop Losing{" "}
-            <span style={{ color: "#1565ff" }}>Pool Projects To Voicemail.</span>
+            Everything You Need To Catch Calls{" "}
+            <span style={{ color: "#1565ff" }}>And Earn Reviews — Automatically.</span>
           </h2>
 
           <p

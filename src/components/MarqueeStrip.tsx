@@ -1,14 +1,14 @@
 const items = [
   "AI Receptionist",
+  "5-Star Google Reviews",
   "Captures Every Missed Call",
   "Hot Lead Tagging",
   "Instant Text Summary",
+  "Automated Review Follow-Up",
   "After-Hours Coverage",
-  "Weekend Coverage",
   "Spam & Vendor Filtering",
   "Live Same Day",
   "Built For Pool Companies",
-  "No Long-Term Contracts",
   "Cancel Anytime",
   "No Setup Fee",
 ];

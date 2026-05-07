@@ -20,8 +20,8 @@ export default function AgencySection() {
             color: "#111827",
           }}
         >
-          <span style={{ color: "#111827" }}>The AI Receptionist Built For </span>
-          <span style={{ color: "#1565ff" }}>Pool Builders & Remodelers</span>
+          <span style={{ color: "#111827" }}>AI Receptionist + 5-Star Reviews </span>
+          <span style={{ color: "#1565ff" }}>For Pool Builders & Remodelers</span>
         </h2>
 
         <p
@@ -35,11 +35,13 @@ export default function AgencySection() {
           }}
         >
           <strong style={{ color: "#111827", fontWeight: 700 }}>Waterline Growth</strong>{" "}
-          is a missed-call capture service built for swimming pool contractors,
-          builders, and remodelers. When you can&apos;t answer the phone, our
-          AI receptionist picks up, asks the right questions, and instantly
-          texts you a clean summary — with new pool builds and major remodels
-          flagged as hot leads so you can call back fast and win the project.
+          is a done-for-you missed-call and reputation system built for
+          swimming pool contractors, builders, and remodelers. When you
+          can&apos;t answer the phone, our AI receptionist picks up, flags new
+          pool builds and major remodels as hot leads, and texts you a clean
+          summary. After every finished project, we follow up with the
+          homeowner to capture a 5-star Google review — so the work you
+          already do builds your reputation automatically.
         </p>
       </div>
     </section>

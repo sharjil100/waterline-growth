@@ -20,6 +20,10 @@ const faqs = [
     a: "No. Your phone still rings first on every call. The receptionist only picks up when you can't — missed calls, after-hours, or when you're already on the line.",
   },
   {
+    q: "How does the review follow-up work?",
+    a: "After a job is marked complete, we send the homeowner a quick check-in. If they're happy, they get a one-tap link to leave a Google review. If they don't respond, smart reminders nudge them gently a couple of days later. Customers who weren't satisfied don't get the review prompt at all — so your Google profile only sees the happy ones.",
+  },
+  {
     q: "Is there a contract?",
     a: "No. It's month-to-month, $397 flat, cancel anytime. If it's not paying for itself, you shouldn't stay.",
   },

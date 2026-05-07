@@ -168,7 +168,7 @@ function OrbitalSystem() {
             marginBottom: "10px",
             textShadow: "0 1px 3px rgba(0,20,50,0.45)",
           }}>
-            Every Missed Call
+            Every Call & Job
           </span>
           <span style={{
             fontSize: "42px", fontWeight: 900,
@@ -176,7 +176,7 @@ function OrbitalSystem() {
             letterSpacing: "-0.02em",
             textShadow: "0 2px 6px rgba(0,20,50,0.55), 0 1px 2px rgba(0,15,40,0.6)",
           }}>
-            CAPTURED
+            HANDLED
           </span>
           <span style={{
             fontSize: "11px", fontWeight: 600,
@@ -185,7 +185,7 @@ function OrbitalSystem() {
             marginTop: "12px",
             textShadow: "0 1px 3px rgba(0,20,50,0.55)",
           }}>
-            Tagged · Texted · Tracked
+            Captured · Tagged · Reviewed
           </span>
         </PoolWater>
       </div>
@@ -211,7 +211,7 @@ function TrustStrip() {
   const items = [
     "Captures every missed call",
     "Flags new builds & remodels",
-    "Instant text summary to you",
+    "Drives 5-star Google reviews",
     "No setup fee · Live same day",
   ];
   return (
@@ -272,7 +272,7 @@ export default function HeroSection() {
               display: "inline-block",
             }} />
             <span style={{ color: "#1565ff", fontSize: "13px", fontWeight: 600, letterSpacing: "0.04em" }}>
-              AI Receptionist For Pool Builders & Remodelers
+              AI Receptionist + 5-Star Reviews · Built For Pools
             </span>
           </div>
 
@@ -293,9 +293,9 @@ export default function HeroSection() {
             lineHeight: 1.72, margin: "0 0 32px", fontWeight: 400,
             maxWidth: "500px",
           }}>
-            Our AI receptionist captures every missed call, asks the right
-            questions, and instantly flags new pool builds and major remodels
-            as hot leads — so you can call back fast and win the project.
+            Our AI receptionist captures every missed call, flags new builds
+            and major remodels as hot leads, and turns finished projects into
+            5-star Google reviews on autopilot — all for one flat monthly fee.
           </p>
 
           {/* CTAs */}

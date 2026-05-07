@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "We didn't change our work at all. We just stopped losing the calls that come in while we're on a job site. The hot lead tags alone have already paid for the service many times over.",
+      "We didn't change our work at all. We just stopped losing the calls that come in while we're on a job site, and started getting more 5-star reviews on Google. The hot lead tags alone have already paid for the service many times over.",
     name: "Pool Remodeler",
     role: "Owner",
   },
