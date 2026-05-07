@@ -53,33 +53,33 @@ const leftFeatures = [
   },
   {
     icon: <BoltIcon />,
-    title: "Live in Days, Not Weeks",
-    desc: "Onboard quickly and your first leads can arrive within the first week.",
+    title: "Live Same Day",
+    desc: "Onboarding takes one 10–15 minute call. You're capturing missed calls the same day.",
   },
   {
     icon: <ChartIcon />,
     title: "Flat Monthly Rate",
-    desc: "One price for management. No hidden fees and no per-lead charges.",
+    desc: "10 missed calls or 100 — the price doesn't change.",
   },
   {
     icon: <TagIcon />,
     title: "Zero Setup Fee",
-    desc: "First payment is your first month of management. That's it.",
+    desc: "First payment is your first month. That's it.",
   },
 ];
 
 const features = [
-  "Facebook & Instagram ad campaigns",
-  "Google Search & Local Service Ads",
-  "Dedicated pool project landing page",
-  "Exclusive leads — never shared",
-  "Lead tracking: click → signed project",
-  "Fast text follow-up on new leads",
-  "Weekly optimization & reporting",
-  "Full ad account ownership",
+  "AI receptionist for missed calls",
+  "Smart number on your Google listing",
+  "Hot lead tagging for new builds & remodels",
+  "Instant text summary to your phone",
+  "After-hours and weekend coverage",
+  "Spam and vendor call filtering",
+  "Full call log with recordings",
+  "Built specifically for the pool industry",
   "No setup fee",
   "No long-term contract",
-  "Month-to-month agreement",
+  "Month-to-month, cancel anytime",
 ];
 
 export default function PricingSection() {
@@ -122,9 +122,9 @@ export default function PricingSection() {
             margin: "0 auto", maxWidth: "560px",
             lineHeight: 1.6,
           }}>
-            One simple offer. One simple number. No setup fees and no long-term
-            contracts. Catching just one extra new build, remodel, or backyard
-            project can pay for many months of the service.
+            One flat monthly fee. No setup fees, no contracts, no per-call
+            charges. Catching just one missed new build or major remodel pays
+            for the service many times over.
           </p>
         </div>
 
@@ -186,7 +186,7 @@ export default function PricingSection() {
                 padding: "7px 20px", borderRadius: "9999px",
                 display: "inline-block",
               }}>
-                Pool Project Pipeline
+                AI Receptionist
               </span>
             </div>
 
@@ -201,7 +201,7 @@ export default function PricingSection() {
                 color: "#ffffff",
                 fontSize: "68px", fontWeight: 900,
                 letterSpacing: "-0.03em", lineHeight: 1,
-              }}>1,400</span>
+              }}>397</span>
               <span style={{
                 color: "rgba(255,255,255,0.50)",
                 fontSize: "16px", fontWeight: 500,
@@ -215,7 +215,7 @@ export default function PricingSection() {
               fontSize: "12.5px", margin: "0 0 22px",
               letterSpacing: "0.01em",
             }}>
-              Management fee · No contracts · Month-to-month
+              Flat rate · No contracts · Month-to-month
             </p>
 
             {/* Feature checklist */}
@@ -244,7 +244,7 @@ export default function PricingSection() {
               marginBottom: "12px",
             }}>
               <PhoneIcon />
-              Book 15-Minute Pipeline Call
+              Book 10-Minute Setup Call
               <ArrowIcon />
             </a>
 
@@ -253,7 +253,7 @@ export default function PricingSection() {
               color: "rgba(255,255,255,0.30)",
               fontSize: "12px", margin: 0,
             }}>
-              No setup fee · Month-to-month
+              No setup fee · Live same day
             </p>
           </div>
 
@@ -280,13 +280,13 @@ export default function PricingSection() {
                 fontSize: "17px", fontWeight: 800, lineHeight: 1.4,
                 margin: "0 0 10px",
               }}>
-                One extra new build, remodel, or backyard project pays for many months of the service.
+                One captured new build covers years of service.
               </h4>
               <p style={{
                 color: "#3b82f6",
                 fontSize: "13.5px", lineHeight: 1.6, margin: 0,
               }}>
-                Even one signed project at $20k–$300k covers months of management.
+                Even a single saved $20k remodel covers four years of the flat $397/mo fee.
               </p>
             </div>
 
@@ -302,16 +302,16 @@ export default function PricingSection() {
                 color: "#6b7280",
                 fontSize: "14px", lineHeight: 1.65, marginBottom: "12px",
               }}>
-                You do not share leads with five other contractors. You do not
-                chase junk from Angi or HomeAdvisor. You do not boost random
-                Facebook posts and hope something happens.
+                You don&apos;t hire a $4,000/mo receptionist. You don&apos;t
+                buy generic call-center scripts. You don&apos;t lose nights and
+                weekends to voicemail.
               </p>
               <p style={{
                 color: "#111827",
                 fontSize: "14.5px", fontWeight: 700, lineHeight: 1.55, margin: 0,
               }}>
-                You get a system that runs while you&apos;re on the job site,
-                bringing in the projects you actually want.
+                You get a receptionist that picks up every call you can&apos;t,
+                and texts you the ones worth calling back first.
               </p>
             </div>
 

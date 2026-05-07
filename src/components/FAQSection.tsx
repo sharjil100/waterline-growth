@@ -1,23 +1,27 @@
 const faqs = [
   {
     q: "How fast can we be live?",
-    a: "Usually within 3–5 business days after the onboarding call and getting access to your accounts.",
+    a: "Usually inside the same 10–15 minute setup call. We connect a smart number to your Google Business Profile and website while we're on the line, and your AI receptionist starts capturing missed calls that day.",
   },
   {
-    q: "Do I have to learn a bunch of software?",
-    a: "No. We run the tools. You get simple updates and a clear view of leads, estimates, and signed projects.",
+    q: "Will it sound robotic to my customers?",
+    a: "No. The receptionist holds a short, natural conversation — name, callback, ZIP, project type, urgency — and gets out of the way. Most calls wrap up in under a minute and homeowners feel heard, not interrogated.",
   },
   {
-    q: "Can I start with just Facebook or just Google?",
-    a: "Yes, but we recommend starting with both for better coverage. Facebook and Instagram help create demand. Google and Local Service Ads capture people already searching. We can match the rollout to your budget and pace.",
+    q: "What about new builds and major remodels?",
+    a: "Inquiries about new in-ground pool construction and major remodels are flagged as hot leads. You get an instant text so you can call back before a competitor does — even if the call came in at 9pm on a Sunday.",
   },
   {
-    q: "Is this only for new pool builders?",
-    a: "No. The system is built for both pool builders and pool remodelers. We can target new pool construction, major remodels, resurfacing, equipment upgrades, and full backyard projects depending on what you want more of.",
+    q: "Do you filter spam and vendor calls?",
+    a: "Yes. The receptionist screens out telemarketers, vendor pitches, and obvious spam, so the only summaries you see are real homeowners worth calling back.",
   },
   {
-    q: "Is there a long-term contract?",
-    a: "No. It is month-to-month. If it is not paying for itself, you should not stay.",
+    q: "Does this replace my phone?",
+    a: "No. Your phone still rings first on every call. The receptionist only picks up when you can't — missed calls, after-hours, or when you're already on the line.",
+  },
+  {
+    q: "Is there a contract?",
+    a: "No. It's month-to-month, $397 flat, cancel anytime. If it's not paying for itself, you shouldn't stay.",
   },
 ];
 
@@ -47,16 +51,15 @@ export default function FAQSection() {
           margin: "0 0 44px", letterSpacing: "-0.02em",
           color: "#111827",
         }}>
-          Questions Pool Companies{" "}
-          <span style={{ color: "#1565ff" }}>Ask</span>{" "}
-          Before Booking.
+          Questions Pool Owners Ask{" "}
+          <span style={{ color: "#1565ff" }}>Before Going Live.</span>
         </h2>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           {faqs.map((f, i) => (
             <details
               key={i}
-              className={`faq-item reveal reveal-d${i + 1}`}
+              className={`faq-item reveal reveal-d${Math.min(i + 1, 5)}`}
               style={{
                 background: "#ffffff",
                 border: "1px solid #e5e7eb",

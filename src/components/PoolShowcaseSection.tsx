@@ -2,9 +2,9 @@ const projects = [
   {
     label: "New Builds",
     heading: "Custom Pool Construction",
-    body: "Reach homeowners actively planning a new pool. These are people with the yard space, budget, and intent to build.",
+    body: "When a homeowner calls about a brand-new in-ground pool, the receptionist tags it as a hot lead and texts you immediately so you can call back before a competitor does.",
     stat: "$80k–$300k",
-    statLabel: "avg. project value",
+    statLabel: "per missed call",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -16,9 +16,9 @@ const projects = [
   {
     label: "Remodels",
     heading: "Major Renovations & Remodels",
-    body: "Reach homeowners who already have a pool and want to upgrade it — resurfacing, replastering, tile, coping, equipment upgrades, lighting, automation, and full pool renovations.",
+    body: "Resurfacing, replaster, tile, coping, equipment, lighting, automation, full renovations — every remodel inquiry gets captured, qualified, and tagged so you can prioritize the big ones.",
     stat: "$20k–$80k",
-    statLabel: "avg. project value",
+    statLabel: "per missed call",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
@@ -28,9 +28,9 @@ const projects = [
   {
     label: "Outdoor Living",
     heading: "Full Backyard Transformations",
-    body: "Reach homeowners who want the complete outdoor experience — outdoor kitchens, pergolas, fire features, decking, landscaping, and full backyard builds.",
+    body: "Outdoor kitchens, pergolas, fire features, decking, landscaping, full backyard builds — high-ticket inquiries the receptionist surfaces so they don't get lost in the shuffle.",
     stat: "$50k–$200k",
-    statLabel: "avg. project value",
+    statLabel: "per missed call",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -59,7 +59,7 @@ export default function PoolShowcaseSection() {
             fontSize: "12px", fontWeight: 700, letterSpacing: "0.16em",
             textTransform: "uppercase", marginBottom: "16px",
           }}>
-            Projects We Help You Win
+            Projects Worth Catching
           </span>
           <h2 style={{
             fontSize: "clamp(28px, 3.4vw, 50px)",
@@ -67,17 +67,17 @@ export default function PoolShowcaseSection() {
             margin: "0 0 16px", letterSpacing: "-0.02em",
             color: "#ffffff", maxWidth: "720px",
           }}>
-            New Builds. Remodels.{" "}
-            <span style={{ color: "#1565ff" }}>Real Backyard Transformations.</span>
+            One Missed Call Could Be Worth{" "}
+            <span style={{ color: "#1565ff" }}>More Than A Year Of Service.</span>
           </h2>
           <p style={{
             color: "rgba(255,255,255,0.50)",
             fontSize: "16px", lineHeight: 1.65,
             maxWidth: "640px", margin: 0,
           }}>
-            Waterline Growth helps pool companies attract the projects they
-            actually want — not small cleanup jobs, shared quote requests, or
-            low-intent leads.
+            Every inquiry the receptionist captures could be a major project.
+            Here&apos;s what&apos;s usually on the line when your phone goes
+            unanswered.
           </p>
         </div>
 

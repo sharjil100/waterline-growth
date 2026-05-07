@@ -21,25 +21,25 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function ProblemSection() {
   const current = [
-    "Some word-of-mouth",
-    "Some random website leads",
-    "Maybe a boosted post or small Google campaign someone set up",
-    "No clear tracking on what actually turns into signed projects",
-    "No real system for turning online attention into booked estimates",
+    "The phone rings while you're elbow-deep in a job",
+    "You can't answer with wet hands, chemicals, or tools",
+    "Calls go to voicemail — and most homeowners hang up",
+    "You see the missed call hours later, after the lead has moved on",
+    "After-hours and weekend inquiries vanish completely",
   ];
   const means = [
-    "Lost remodels, resurfacing jobs, and new pool builds",
-    "Slow months you should not have",
-    "Competitors showing up everywhere online while you disappear",
-    "Price shoppers comparing you against contractors with better ads and more reviews",
-    "Wasted time chasing people who were never serious",
-    "No clear idea which leads, ads, or channels are actually producing revenue",
+    "Lost new pool builds worth $80k–$300k",
+    "Lost major remodels worth $20k–$80k",
+    "Lost resurfacing, equipment, and backyard projects",
+    "Hot leads handed to whichever competitor answered first",
+    "No idea which missed call was the project of the month",
+    "Negative \"no one answered\" reviews from frustrated homeowners",
   ];
   const ontop = [
-    "Lead vendors sell the same quote request to 3–5 contractors",
-    "Homeowners compare you against whoever replies fastest",
-    "Big-ticket pool projects end up fighting for scraps of online attention",
-    "Missed calls and slow follow-up can turn into lost work",
+    "Voicemail kills 72% of incoming calls — they hang up instead",
+    "Homeowners pick whichever contractor calls back fastest",
+    "A single new build inquiry can be worth more than a year of phone bills",
+    "Hiring a real receptionist costs thousands a month and still misses nights",
   ];
 
   return (
@@ -66,9 +66,9 @@ export default function ProblemSection() {
           margin: "0 0 48px", letterSpacing: "-0.02em",
           color: "#ffffff",
         }}>
-          Referrals Alone Won&apos;t Fill A{" "}
+          Missed Calls Are Costing You Real{" "}
           <span style={{ color: "#60a5fa" }}>$20k–$300k</span>{" "}
-          Pool Pipeline Forever.
+          Pool Projects.
         </h2>
 
         <div style={{
@@ -76,9 +76,9 @@ export default function ProblemSection() {
           gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
         }}>
           {[
-            { title: "Right now, most pool contractors are here:", items: current },
-            { title: "What that really means:", items: means },
-            { title: "On top of that:", items: ontop },
+            { title: "A typical workday looks like this:", items: current },
+            { title: "What it actually costs you:", items: means },
+            { title: "And here's the kicker:", items: ontop },
           ].map((block, i) => (
             <div key={block.title} className={`reveal reveal-d${i + 1}`} style={{
               background: "rgba(255,255,255,0.06)",
@@ -111,8 +111,9 @@ export default function ProblemSection() {
             paddingLeft: "20px",
           }}
         >
-          A single unanswered call on a pool build or major remodel can be
-          your entire monthly marketing budget walking to another contractor.
+          A single unanswered call on a new pool build or major remodel can
+          be the difference between your best month of the year and another
+          slow week.
         </p>
       </div>
     </section>

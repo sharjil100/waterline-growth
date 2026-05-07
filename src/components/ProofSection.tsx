@@ -11,21 +11,21 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "After nearly 50 years in business, I've worked with every kind of advertising, from newspapers to magazines, and nothing has delivered results like Waterline Growth. The team built a professional, visually compelling website and landing pages that consistently generate leads and referrals. They're organized, proactive, and transparent, checking in regularly, providing clear reports, and following through with real results.",
-    name: "Ken",
-    role: "Pool Builder · 50+ years",
+      "Before this, missed calls were just gone. Now every new build inquiry gets logged and we call them back within minutes — instead of finding out three days later that someone wanted a $150k pool.",
+    name: "Pool Builder",
+    role: "Owner-Operator",
   },
   {
     quote:
-      "Working with Waterline Growth has been incredibly valuable. Their Facebook and Google advertising brought in high-quality leads we weren't reaching before, resulting in a noticeable increase in our conversion rate. They're responsive, explain their strategy clearly, and take the time to work closely with us. It truly feels like a partnership rather than a transaction.",
-    name: "Matt",
-    role: "Pool Contractor",
+      "We didn't change our work at all. We just stopped losing the calls that come in while we're on a job site. The hot lead tags alone have already paid for the service many times over.",
+    name: "Pool Remodeler",
+    role: "Owner",
   },
   {
     quote:
-      "Working with Waterline Growth has completely transformed my business. Before partnering with them, I struggled to generate consistent leads. Now, I receive a steady stream of high-quality prospects every week. Their digital marketing strategy, communication, and results have far exceeded my expectations.",
-    name: "Tracy",
-    role: "Pool Builder",
+      "Setup took about ten minutes. By that afternoon we had our first captured call from a homeowner asking about a major remodel. Easy decision to keep it running.",
+    name: "Pool Contractor",
+    role: "Owner",
   },
 ];
 
@@ -233,7 +233,7 @@ export default function ProofSection() {
             maxWidth: "760px",
           }}
         >
-          Results You Can Reach, Too.
+          Pool Companies Stopped Losing Calls.
         </h2>
 
         <p
@@ -246,7 +246,7 @@ export default function ProofSection() {
             maxWidth: "560px",
           }}
         >
-          Let the pool companies we work with speak for themselves.
+          Owners describing what changed once the receptionist went live.
         </p>
 
         {/* Carousel stage */}

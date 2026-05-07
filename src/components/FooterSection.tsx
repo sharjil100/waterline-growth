@@ -6,7 +6,7 @@ const navLinks = [
   { label: "How It Works", href: "/#how" },
   { label: "Pricing", href: "/#pricing" },
   { label: "FAQ", href: "/#faq" },
-  { label: "Book Call", href: "/#book" },
+  { label: "Book Setup Call", href: "/#book" },
 ];
 
 const legalLinks = [
@@ -58,8 +58,9 @@ export default function FooterSection() {
               maxWidth: "300px",
               margin: "0 0 16px",
             }}>
-              Full-service digital marketing for pool builders and remodelers.
-              Exclusive leads. Real results.
+              Waterline Growth helps pool builders and remodelers capture every
+              missed call and flag new builds and major remodels as hot leads —
+              all for one flat monthly fee.
             </p>
             <p style={{
               color: "rgba(255,255,255,0.25)",
@@ -69,7 +70,7 @@ export default function FooterSection() {
               textTransform: "uppercase",
               margin: 0,
             }}>
-              Built for pool builders and remodelers
+              AI Receptionist · Built for pools
             </p>
           </div>
 
@@ -156,7 +157,7 @@ export default function FooterSection() {
                 textDecoration: "none",
               }}
             >
-              Book Pipeline Call
+              Book Setup Call
             </a>
           </div>
         </div>
@@ -176,7 +177,7 @@ export default function FooterSection() {
               &copy; 2026 Waterline Growth. All rights reserved.
             </p>
             <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "13px", margin: 0 }}>
-              Exclusive leads &middot; Pool builders &amp; remodelers only &middot; Month-to-month
+              AI receptionist &middot; Pool builders &amp; remodelers &middot; Month-to-month
             </p>
           </div>
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>

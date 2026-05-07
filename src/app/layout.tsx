@@ -9,9 +9,9 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Waterline Growth - Pool Builder & Remodeler Marketing Agency",
+  title: "Waterline Growth - AI Receptionist For Pool Builders & Remodelers",
   description:
-    "Full-service digital marketing for swimming pool contractors, builders, and remodelers. We help pool companies grow with Facebook, Instagram, Google, and Local Service Ads — exclusive leads, real results.",
+    "Stop losing $20k–$300k pool projects to voicemail. Our AI receptionist captures every missed call, flags new builds and major remodels as hot leads, and texts you the summary. Flat $397/mo, no setup fee, live the same day.",
 };
 
 export const viewport = {

@@ -75,7 +75,7 @@ export default function Navbar() {
               fontWeight: 700, fontSize: "14px", letterSpacing: "0.02em",
               textDecoration: "none", whiteSpace: "nowrap",
             }}>
-              Book Call
+              Book Setup Call
             </a>
 
             <button
@@ -148,7 +148,7 @@ export default function Navbar() {
               textAlign: "center",
               textDecoration: "none",
             }}>
-              Book Pipeline Call
+              Book Setup Call
             </a>
           </nav>
         </div>

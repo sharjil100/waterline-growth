@@ -1,31 +1,29 @@
 const cards = [
   {
-    title: "Built only for pool companies.",
-    body: "Waterline Growth is not juggling dentists, gyms, restaurants, and roofers. The system is built for pool builders, pool remodelers, and outdoor living companies — so the messaging, targeting, landing pages, and tracking are all wired to real pool project economics.",
+    title: "We don't replace your phone.",
+    body: "Calls still ring your phone first. The AI receptionist only picks up when you can't — missed calls, after-hours, or when you're already on another line. Unlike traditional answering services that route everything through a call center, you stay in control of every call you can take.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Short, human conversations.",
+    body: "No phone trees. No \"press 1 for service.\" The receptionist holds a brief, natural conversation, gets the basics — name, callback, ZIP, project type — and gets out of the way. Most calls wrap up in under a minute, with the homeowner feeling heard, not interrogated.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Built specifically for the pool industry.",
+    body: "It knows the difference between a service call, a resurfacing inquiry, an equipment failure, and a $200k new build. Generic answering services treat every call the same — ours flags new pool builds and major remodels as hot leads so the high-value projects never get buried.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2C12 2 5 9 5 15a7 7 0 0 0 14 0C19 9 12 2 12 2z" />
         <path d="M8 15c1.5-1.5 3-1 4.5.5S16 17 17.5 15.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "You keep the assets.",
-    body: "Your ads, landing pages, accounts, data, and campaigns stay in your name. If you ever stop working with us, you still own everything. You are not trapped inside an agency-owned account.",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        <path d="m9 12 2 2 4-4" />
-      </svg>
-    ),
-  },
-  {
-    title: "Signed-project math, not agency fluff.",
-    body: "We do not judge success by clicks, impressions, or lead volume alone. We care how many leads became estimates, how many estimates became signed projects, and what it cost to get a closed pool job. The goal is more profitable pool construction and remodel projects — not a pretty spreadsheet.",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 3v18h18" />
-        <path d="m7 15 4-4 4 4 5-6" />
       </svg>
     ),
   },
@@ -57,8 +55,8 @@ export default function WhyDifferentSection() {
           margin: "0 0 52px", letterSpacing: "-0.02em", maxWidth: "820px",
           color: "#111827",
         }}>
-          Three Things Most Agencies{" "}
-          <span style={{ color: "#1565ff" }}>Won&apos;t Say Out Loud.</span>
+          Three Reasons This Isn&apos;t Like{" "}
+          <span style={{ color: "#1565ff" }}>The Last Answering Service You Tried.</span>
         </h2>
 
         <div style={{

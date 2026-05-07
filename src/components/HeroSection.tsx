@@ -168,7 +168,7 @@ function OrbitalSystem() {
             marginBottom: "10px",
             textShadow: "0 1px 3px rgba(0,20,50,0.45)",
           }}>
-            All Your Leads
+            Every Missed Call
           </span>
           <span style={{
             fontSize: "42px", fontWeight: 900,
@@ -176,7 +176,7 @@ function OrbitalSystem() {
             letterSpacing: "-0.02em",
             textShadow: "0 2px 6px rgba(0,20,50,0.55), 0 1px 2px rgba(0,15,40,0.6)",
           }}>
-            ONE PIPELINE
+            CAPTURED
           </span>
           <span style={{
             fontSize: "11px", fontWeight: 600,
@@ -185,7 +185,7 @@ function OrbitalSystem() {
             marginTop: "12px",
             textShadow: "0 1px 3px rgba(0,20,50,0.55)",
           }}>
-            Facebook · Instagram · X · LinkedIn · Google
+            Tagged · Texted · Tracked
           </span>
         </PoolWater>
       </div>
@@ -209,10 +209,10 @@ function OrbitalSystem() {
 /* ── Trust strip ─────────────────────────────────────────── */
 function TrustStrip() {
   const items = [
-    "Exclusive leads — never shared",
-    "Runs in YOUR ad accounts",
-    "No long-term contracts",
-    "Tracking click → signed job",
+    "Captures every missed call",
+    "Flags new builds & remodels",
+    "Instant text summary to you",
+    "No setup fee · Live same day",
   ];
   return (
     <div style={{
@@ -272,7 +272,7 @@ export default function HeroSection() {
               display: "inline-block",
             }} />
             <span style={{ color: "#1565ff", fontSize: "13px", fontWeight: 600, letterSpacing: "0.04em" }}>
-              Pool Builder & Remodeler Marketing Agency
+              AI Receptionist For Pool Builders & Remodelers
             </span>
           </div>
 
@@ -284,8 +284,8 @@ export default function HeroSection() {
           }}>
             Stop Losing{" "}
             <span style={{ color: "#1565ff" }}>$20k–$300k</span>{" "}
-            Pool Projects To Contractors Who Show Up{" "}
-            <span style={{ color: "#1565ff" }}>First</span>
+            Pool Projects Every Time You{" "}
+            <span style={{ color: "#1565ff" }}>Miss A Call</span>
           </h1>
 
           <p style={{
@@ -293,10 +293,9 @@ export default function HeroSection() {
             lineHeight: 1.72, margin: "0 0 32px", fontWeight: 400,
             maxWidth: "500px",
           }}>
-            We run Facebook, Instagram, Google, and Local Service Ads in your
-            own accounts so you get real pool construction and remodel leads in
-            your service area — not shared leads, tire-kickers, or random form
-            fills.
+            Our AI receptionist captures every missed call, asks the right
+            questions, and instantly flags new pool builds and major remodels
+            as hot leads — so you can call back fast and win the project.
           </p>
 
           {/* CTAs */}
@@ -308,7 +307,7 @@ export default function HeroSection() {
               textDecoration: "none", display: "inline-block",
               animation: "ctaGlow 3s ease-in-out infinite",
             }}>
-              Book 15-Minute Pipeline Call
+              Book 10-Minute Setup Call
             </a>
             <a href="#how" className="link-arrow" style={{
               color: "rgba(11,30,59,0.72)", fontSize: "15px", fontWeight: 600,
@@ -325,7 +324,7 @@ export default function HeroSection() {
             color: "rgba(11,30,59,0.45)", fontSize: "13px",
             margin: "0 0 32px", fontWeight: 400,
           }}>
-            No setup fee. Month-to-month. Built for pool builders and remodelers only.
+            No setup fee. Month-to-month. Live in one short call.
           </p>
 
           <TrustStrip />

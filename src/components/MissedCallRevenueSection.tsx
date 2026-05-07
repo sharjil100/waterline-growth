@@ -6,12 +6,12 @@ const bullets = [
     body: "For pool builders and remodelers, one lost conversation can mean tens of thousands in missed revenue.",
   },
   {
-    title: "Built for builders & remodelers",
-    body: "Defaults tuned to real pool economics — new builds, remodels, and resurfacing — not generic home-services averages.",
+    title: "Tuned to real pool economics",
+    body: "Defaults built around new builds, remodels, and resurfacing — not generic home-services averages.",
   },
   {
-    title: "Then we plug the leak",
-    body: "Call tracking, fast follow-up, and ad spend pointed at projects you can actually close.",
+    title: "Then our AI receptionist plugs the leak",
+    body: "Captures every missed call, tags new builds and major remodels as hot leads, and texts you the summary so you can call back fast.",
   },
 ];
 

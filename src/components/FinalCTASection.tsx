@@ -55,7 +55,7 @@ export default function FinalCTASection() {
               marginBottom: "22px",
             }}
           >
-            Let&rsquo;s Build Your Pipeline
+            Don&rsquo;t Let Another Project Slip Away
           </span>
 
           <h2
@@ -68,9 +68,9 @@ export default function FinalCTASection() {
               color: "#ffffff",
             }}
           >
-            Ready To Turn Your Slow Season Into{" "}
+            Stop Sending New Pool Builds To{" "}
             <span style={{ color: "rgba(150,210,255,1)" }}>
-              Signed Pool Projects?
+              Voicemail.
             </span>
           </h2>
 
@@ -82,9 +82,9 @@ export default function FinalCTASection() {
               margin: "0 0 28px",
             }}
           >
-            We&rsquo;ll build and run your Pool Project Pipeline System so you
-            can stay on the job site while your marketing works in the
-            background.
+            One short call and your AI receptionist is live the same day —
+            picking up missed calls, flagging hot leads, and texting you
+            summaries while you stay focused on the job site.
           </p>
 
           <p
@@ -96,7 +96,7 @@ export default function FinalCTASection() {
               margin: "0 0 14px",
             }}
           >
-            In one short call, we will:
+            On the setup call, we will:
           </p>
 
           <ul
@@ -110,11 +110,11 @@ export default function FinalCTASection() {
             }}
           >
             {[
-              "Map your service area",
-              "Review your project capacity",
-              "Look at the types of jobs you want most",
-              "Identify which channels make sense first",
-              "Give you a clear plan, whether you hire us or not",
+              "Connect a smart number to your Google listing and website",
+              "Configure how the receptionist handles your incoming calls",
+              "Set up hot lead tagging for new builds and major remodels",
+              "Send a test summary text so you see exactly what you'll get",
+              "Hand it off — live the same day, no setup fee",
             ].map((t) => (
               <li
                 key={t}

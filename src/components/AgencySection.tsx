@@ -20,8 +20,8 @@ export default function AgencySection() {
             color: "#111827",
           }}
         >
-          <span style={{ color: "#111827" }}>Swimming Pool Contractors </span>
-          <span style={{ color: "#1565ff" }}>Digital Marketing Agency</span>
+          <span style={{ color: "#111827" }}>The AI Receptionist Built For </span>
+          <span style={{ color: "#1565ff" }}>Pool Builders & Remodelers</span>
         </h2>
 
         <p
@@ -35,13 +35,11 @@ export default function AgencySection() {
           }}
         >
           <strong style={{ color: "#111827", fontWeight: 700 }}>Waterline Growth</strong>{" "}
-          is a digital marketing agency built specifically for swimming pool
-          contractors, pool builders, and pool remodelers. We help pool
-          companies get more traffic, more qualified leads, and more signed
-          projects through focused Facebook and Instagram Ads, Google Search
-          Ads, Local Service Ads, landing pages, call tracking, and follow-up
-          systems — built around one goal: more booked estimates and more
-          signed pool construction and remodel projects.
+          is a missed-call capture service built for swimming pool contractors,
+          builders, and remodelers. When you can&apos;t answer the phone, our
+          AI receptionist picks up, asks the right questions, and instantly
+          texts you a clean summary — with new pool builds and major remodels
+          flagged as hot leads so you can call back fast and win the project.
         </p>
       </div>
     </section>

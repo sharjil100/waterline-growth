@@ -10,54 +10,9 @@ type Step = {
 
 const steps: Step[] = [
   {
-    kicker: "Discovery",
-    title: "We map your ideal projects and service area",
-    body: "On a quick call, we figure out what kind of work you actually want — new pool builds, major remodels, resurfacing, equipment upgrades, outdoor living projects — plus the neighborhoods and service areas you cover and your real-world capacity. The goal is simple: only chase projects you would actually want to sign.",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-        <circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
-  },
-  {
-    kicker: "Build",
-    title: "We build a simple, focused funnel",
-    body: "A lean funnel that pre-qualifies homeowners before they ever hit your inbox. You do not need a bloated website — you need a page that turns interested homeowners into booked estimates.",
-    bullets: [
-      "A dedicated landing page for pool construction and remodel projects in your area",
-      "Ad creative that looks like real pools and yards, not stock junk",
-      "Clear messaging for new builds, remodels, resurfacing, and backyard upgrades",
-      "Filters to block bots, wrong states, and obvious bad leads",
-    ],
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 4h16M6 10l6 10 6-10M8 4v6M16 4v6" />
-      </svg>
-    ),
-  },
-  {
-    kicker: "Launch",
-    title: "Multi-platform ads in your own accounts",
-    body: "We run Facebook, Instagram, Google Search, and Local Service Ads inside your own profiles. We are not renting you a black-box lead system — we are building your pipeline inside accounts you own.",
-    bullets: [
-      "The ad accounts stay yours",
-      "The data stays yours",
-      "The leads stay yours",
-      "Campaigns are built around your service area",
-      "Your business keeps the assets",
-    ],
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M3 12h18M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
-      </svg>
-    ),
-  },
-  {
-    kicker: "Protect",
-    title: "Fast follow-up that saves leads",
-    body: "New form fills and missed calls get fast text follow-up so interested homeowners do not drift to the next contractor. This protects the money you already spent on ads. Getting a lead is not enough — you need to reach them while they are still interested.",
+    kicker: "Smart Number",
+    title: "We connect a smart number to your business",
+    body: "On a 10–15 minute setup call, we connect a new number to your Google Business Profile and website. It still rings your phone first — you only hear from our AI receptionist when you can't pick up.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -65,21 +20,44 @@ const steps: Step[] = [
     ),
   },
   {
-    kicker: "Optimize",
-    title: "Weekly tuning toward signed projects",
-    body: "We track what matters, not vanity metrics. You get clear reporting so you can see what is happening without learning a complicated platform.",
+    kicker: "Capture",
+    title: "Every missed call gets answered",
+    body: "When you can't pick up, the AI receptionist takes over in a short, natural conversation and collects exactly what you need to call them back fast.",
     bullets: [
-      "Leads per channel",
-      "Leads to in-person estimates",
-      "Estimates to signed projects",
-      "Cost per real opportunity",
-      "Which ads are producing serious homeowners",
-      "Which channels deserve more budget",
+      "Caller name and best callback number",
+      "ZIP code and service area",
+      "New customer or existing customer",
+      "Type of project — new build, remodel, resurface, equipment, service",
+      "Urgency and ideal timeframe",
     ],
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 3v18h18" />
-        <path d="M7 14l4-4 4 4 5-5" />
+        <path d="M3 5a2 2 0 0 1 2-2h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5z" />
+      </svg>
+    ),
+  },
+  {
+    kicker: "Hot Lead Flag",
+    title: "New builds & major remodels get tagged",
+    body: "Inquiries about new in-ground pools and major remodels are flagged as hot leads — so a $20k–$300k project never gets buried under routine service questions.",
+    bullets: [
+      "New in-ground pool build inquiries",
+      "Major remodel and renovation inquiries",
+      "After-hours and weekend hot leads",
+    ],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2s7 4 7 12a7 7 0 0 1-14 0c0-4 3-6 4-9 1 1 2 3 3 5 1-2 0-4 0-8z" />
+      </svg>
+    ),
+  },
+  {
+    kicker: "Text Summary",
+    title: "You get a clean text summary in seconds",
+    body: "The receptionist hangs up, you get a text. Caller details, what they need, urgency — everything you need to decide who to call back first. No app to check, no dashboard to learn.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>
     ),
   },
@@ -152,7 +130,7 @@ export default function HowItWorksSection() {
             maxWidth: "920px",
           }}
         >
-          From First Click To Signed Contract —{" "}
+          From Missed Call To Hot Lead —{" "}
           <span
             style={{
               background: "linear-gradient(90deg, #1565ff 0%, #3ea3ff 100%)",
@@ -161,7 +139,7 @@ export default function HowItWorksSection() {
               backgroundClip: "text",
             }}
           >
-            Five Steps, No Mystery.
+            Four Steps, Live Same Day.
           </span>
         </h2>
 
@@ -175,8 +153,8 @@ export default function HowItWorksSection() {
             maxWidth: "640px",
           }}
         >
-          The system is built around one question: did the ad budget turn into a
-          booked pool project? Every step is designed to help answer yes.
+          Setup takes one short call. After that, every missed call is captured,
+          tagged, and texted to you — automatically.
         </p>
 
         {/* Steps spine */}
@@ -347,10 +325,10 @@ export default function HowItWorksSection() {
         >
           <div style={{ maxWidth: "560px" }}>
             <h3 style={{ fontSize: "clamp(20px, 2.4vw, 28px)", fontWeight: 800, margin: "0 0 8px", letterSpacing: "-0.01em" }}>
-              Want to see it applied to your service area?
+              Ready to stop missing $20k–$300k pool projects?
             </h3>
             <p style={{ fontSize: "15px", margin: 0, color: "rgba(255,255,255,0.82)", lineHeight: 1.6 }}>
-              15-minute pipeline call. No pitch deck, no contracts — just the numbers for your market.
+              10-minute setup call. No setup fee, month-to-month, live the same day.
             </p>
           </div>
           <a
@@ -368,7 +346,7 @@ export default function HowItWorksSection() {
               whiteSpace: "nowrap",
             }}
           >
-            Book Pipeline Call →
+            Book Setup Call →
           </a>
         </div>
       </div>

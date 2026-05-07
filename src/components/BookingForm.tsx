@@ -119,8 +119,8 @@ export default function BookingForm() {
           <strong style={{ color: "#1565ff", display: "block", marginBottom: "4px" }}>
             Got it — we&rsquo;ll reach out shortly.
           </strong>
-          Keep an eye on your phone. We&rsquo;ll call within one business day to
-          set up your 15-minute pipeline call.
+          Keep an eye on your phone. We&rsquo;ll call within one business day
+          to set up your 10-minute receptionist setup call.
         </div>
       ) : (
         <form onSubmit={onSubmit} noValidate>

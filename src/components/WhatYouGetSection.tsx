@@ -1,17 +1,16 @@
 const items = [
-  "Facebook and Instagram ad campaigns built for pool buyers",
-  "Google Search Ads for homeowners actively looking for pool contractors",
-  "Local Service Ads for local high-intent searches",
-  "A dedicated pool construction and remodel landing page",
-  "Exclusive leads in your service area",
-  "No shared leads with other contractors",
-  "Filters to reduce tire-kickers and bad-fit inquiries",
-  "Fast text follow-up on new leads and missed calls",
-  "Tracking from click to lead to estimate to signed project",
-  "Weekly optimization and reporting",
-  "Clear budget guidance based on your project value",
-  "Campaigns running inside your own ad accounts",
-  "A team focused on signed-project math, not agency jargon",
+  "AI receptionist that picks up every missed call",
+  "Smart number connected to your Google listing and website",
+  "Short, natural conversation — not a phone tree",
+  "Caller name, callback number, ZIP, and project type captured",
+  "New builds and major remodels flagged as hot leads",
+  "Instant text summary delivered to your phone",
+  "After-hours, weekend, and overflow call coverage",
+  "Spam and vendor calls filtered out",
+  "Simple call log with full recordings",
+  "Built specifically for the pool industry",
+  "No setup fee — live the same day",
+  "Month-to-month — cancel anytime",
 ];
 
 export default function WhatYouGetSection() {
@@ -54,8 +53,8 @@ export default function WhatYouGetSection() {
               color: "#0b1e3b",
             }}
           >
-            Everything You Need To Turn Ad Spend Into{" "}
-            <span style={{ color: "#1565ff" }}>Signed Projects.</span>
+            Everything You Need To Stop Losing{" "}
+            <span style={{ color: "#1565ff" }}>Pool Projects To Voicemail.</span>
           </h2>
 
           <p
@@ -70,7 +69,7 @@ export default function WhatYouGetSection() {
               marginRight: "auto",
             }}
           >
-            With the Pool Project Pipeline System, you get:
+            One flat monthly fee. Live the same day. Here&apos;s what&apos;s included:
           </p>
         </div>
 
