@@ -12,7 +12,7 @@ const steps: Step[] = [
   {
     kicker: "Discovery",
     title: "We map your ideal projects and service area",
-    body: "On a quick call, we nail down your best jobs — new builds vs. remodels — ideal neighborhoods, and real-world capacity so we only chase work you actually want to sign.",
+    body: "On a quick call, we figure out what kind of work you actually want — new pool builds, major remodels, resurfacing, equipment upgrades, outdoor living projects — plus the neighborhoods and service areas you cover and your real-world capacity. The goal is simple: only chase projects you would actually want to sign.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -23,10 +23,11 @@ const steps: Step[] = [
   {
     kicker: "Build",
     title: "We build a simple, focused funnel",
-    body: "A lean, tight funnel that pre-qualifies before you ever get the lead.",
+    body: "A lean funnel that pre-qualifies homeowners before they ever hit your inbox. You do not need a bloated website — you need a page that turns interested homeowners into booked estimates.",
     bullets: [
-      "Dedicated landing page for pool projects in your area",
+      "A dedicated landing page for pool construction and remodel projects in your area",
       "Ad creative that looks like real pools and yards, not stock junk",
+      "Clear messaging for new builds, remodels, resurfacing, and backyard upgrades",
       "Filters to block bots, wrong states, and obvious bad leads",
     ],
     icon: (
@@ -38,7 +39,14 @@ const steps: Step[] = [
   {
     kicker: "Launch",
     title: "Multi-platform ads in your own accounts",
-    body: "We run Facebook/Instagram, Google Search, and Local Service Ads inside YOUR profiles — so every dollar and every lead stays yours to keep.",
+    body: "We run Facebook, Instagram, Google Search, and Local Service Ads inside your own profiles. We are not renting you a black-box lead system — we are building your pipeline inside accounts you own.",
+    bullets: [
+      "The ad accounts stay yours",
+      "The data stays yours",
+      "The leads stay yours",
+      "Campaigns are built around your service area",
+      "Your business keeps the assets",
+    ],
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="9" />
@@ -49,7 +57,7 @@ const steps: Step[] = [
   {
     kicker: "Protect",
     title: "Fast follow-up that saves leads",
-    body: "New form fills and missed calls get instant text follow-up so interested homeowners actually book an estimate — instead of drifting to the next builder.",
+    body: "New form fills and missed calls get fast text follow-up so interested homeowners do not drift to the next contractor. This protects the money you already spent on ads. Getting a lead is not enough — you need to reach them while they are still interested.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -59,11 +67,14 @@ const steps: Step[] = [
   {
     kicker: "Optimize",
     title: "Weekly tuning toward signed projects",
-    body: "A dashboard that tracks what matters — not vanity metrics.",
+    body: "We track what matters, not vanity metrics. You get clear reporting so you can see what is happening without learning a complicated platform.",
     bullets: [
       "Leads per channel",
-      "Leads → in-person estimates",
-      "Estimates → signed projects",
+      "Leads to in-person estimates",
+      "Estimates to signed projects",
+      "Cost per real opportunity",
+      "Which ads are producing serious homeowners",
+      "Which channels deserve more budget",
     ],
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -141,7 +152,7 @@ export default function HowItWorksSection() {
             maxWidth: "920px",
           }}
         >
-          From first click to signed contract —{" "}
+          From First Click To Signed Contract —{" "}
           <span
             style={{
               background: "linear-gradient(90deg, #1565ff 0%, #3ea3ff 100%)",
@@ -150,7 +161,7 @@ export default function HowItWorksSection() {
               backgroundClip: "text",
             }}
           >
-            five steps, no mystery.
+            Five Steps, No Mystery.
           </span>
         </h2>
 
@@ -164,7 +175,8 @@ export default function HowItWorksSection() {
             maxWidth: "640px",
           }}
         >
-          A system built around a single question: did the ad budget turn into a booked pool job? We engineer every step around answering yes.
+          The system is built around one question: did the ad budget turn into a
+          booked pool project? Every step is designed to help answer yes.
         </p>
 
         {/* Steps spine */}

@@ -1,7 +1,7 @@
 const cards = [
   {
-    title: "Built only for pools.",
-    body: "We're not juggling dentists, gyms, and roofers. Just pools and outdoor living.",
+    title: "Built only for pool companies.",
+    body: "Waterline Growth is not juggling dentists, gyms, restaurants, and roofers. The system is built for pool builders, pool remodelers, and outdoor living companies — so the messaging, targeting, landing pages, and tracking are all wired to real pool project economics.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2C12 2 5 9 5 15a7 7 0 0 0 14 0C19 9 12 2 12 2z" />
@@ -11,7 +11,7 @@ const cards = [
   },
   {
     title: "You keep the assets.",
-    body: "Ads, pages, and accounts stay in your name. If we parted ways, you still own everything.",
+    body: "Your ads, landing pages, accounts, data, and campaigns stay in your name. If you ever stop working with us, you still own everything. You are not trapped inside an agency-owned account.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -21,7 +21,7 @@ const cards = [
   },
   {
     title: "Signed-project math, not agency fluff.",
-    body: 'We care about cost per closed project, not how many "leads" we can pretend look good in a spreadsheet.',
+    body: "We do not judge success by clicks, impressions, or lead volume alone. We care how many leads became estimates, how many estimates became signed projects, and what it cost to get a closed pool job. The goal is more profitable pool construction and remodel projects — not a pretty spreadsheet.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 3v18h18" />
@@ -57,8 +57,8 @@ export default function WhyDifferentSection() {
           margin: "0 0 52px", letterSpacing: "-0.02em", maxWidth: "820px",
           color: "#111827",
         }}>
-          Three things most agencies{" "}
-          <span style={{ color: "#1565ff" }}>won&apos;t say out loud.</span>
+          Three Things Most Agencies{" "}
+          <span style={{ color: "#1565ff" }}>Won&apos;t Say Out Loud.</span>
         </h2>
 
         <div style={{

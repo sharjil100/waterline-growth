@@ -6,11 +6,14 @@ const CheckIcon = () => (
 
 export default function WhoThisIsForSection() {
   const bullets = [
-    "You build in-ground pools or major remodels, not $500 cleanups",
-    "You're stuck at 2–3 projects a month and want 5+ this season",
-    "You've tried Angi / Yelp / HomeAdvisor and got shared junk leads",
-    "You've boosted posts on Facebook and nothing real came from it",
-    "You know there's money in your market, but your phone isn't ringing enough",
+    "You build new in-ground pools or handle major remodels",
+    "You want more $20k–$300k pool projects in your pipeline",
+    "You handle renovations, resurfacing, equipment upgrades, or backyard transformations",
+    "You are stuck at 2–3 projects a month and want to push toward 5+ this season",
+    "You tried Angi, Yelp, HomeAdvisor, or other shared-lead platforms and got junk leads",
+    "You boosted Facebook posts before, but nothing real came from it",
+    "You know there is money in your market, but your phone is not ringing enough",
+    "You want leads that belong to your company only",
   ];
 
   return (
@@ -46,8 +49,8 @@ export default function WhoThisIsForSection() {
             margin: "0 0 36px", letterSpacing: "-0.02em",
             color: "#111827",
           }}>
-            Built for pool builders and remodelers, not{" "}
-            <span style={{ color: "#1565ff" }}>"every local business."</span>
+            Built For Pool Builders And Remodelers, Not{" "}
+            <span style={{ color: "#1565ff" }}>“Every Local Business.”</span>
           </h2>
 
           <p style={{
@@ -72,7 +75,7 @@ export default function WhoThisIsForSection() {
             color: "#4b5563",
             margin: 0,
           }}>
-            If that sounds like your world, the{" "}
+            If that sounds like your business, the{" "}
             <strong style={{ color: "#111827", fontWeight: 800 }}>Pool Project Pipeline System</strong>{" "}
             is for you.
           </p>
@@ -115,7 +118,7 @@ export default function WhoThisIsForSection() {
               Average Project
             </span>
             <span style={{ color: "#111827", fontSize: "22px", fontWeight: 900, letterSpacing: "-0.01em" }}>
-              $80k–$300k
+              $20k–$300k
             </span>
           </div>
         </div>

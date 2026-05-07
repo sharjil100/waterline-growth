@@ -272,7 +272,7 @@ export default function HeroSection() {
               display: "inline-block",
             }} />
             <span style={{ color: "#1565ff", fontSize: "13px", fontWeight: 600, letterSpacing: "0.04em" }}>
-              Pool Builder Marketing Agency
+              Pool Builder & Remodeler Marketing Agency
             </span>
           </div>
 
@@ -283,9 +283,9 @@ export default function HeroSection() {
             letterSpacing: "-0.02em",
           }}>
             Stop Losing{" "}
-            <span style={{ color: "#1565ff" }}>$80k–$300k</span>{" "}
-            Pool Jobs To Builders Who Advertise{" "}
-            <span style={{ color: "#1565ff" }}>Louder</span>, Not Better
+            <span style={{ color: "#1565ff" }}>$20k–$300k</span>{" "}
+            Pool Projects To Contractors Who Show Up{" "}
+            <span style={{ color: "#1565ff" }}>First</span>
           </h1>
 
           <p style={{
@@ -293,9 +293,10 @@ export default function HeroSection() {
             lineHeight: 1.72, margin: "0 0 32px", fontWeight: 400,
             maxWidth: "500px",
           }}>
-            We run Facebook, Instagram, Google, and Local Service Ads under your
-            own accounts so you get real pool and backyard projects in your
-            service area — not shared leads or tire-kickers.
+            We run Facebook, Instagram, Google, and Local Service Ads in your
+            own accounts so you get real pool construction and remodel leads in
+            your service area — not shared leads, tire-kickers, or random form
+            fills.
           </p>
 
           {/* CTAs */}
@@ -324,7 +325,7 @@ export default function HeroSection() {
             color: "rgba(11,30,59,0.45)", fontSize: "13px",
             margin: "0 0 32px", fontWeight: 400,
           }}>
-            No setup fee. Simple monthly fee. We build it, run it, and show you the numbers.
+            No setup fee. Month-to-month. Built for pool builders and remodelers only.
           </p>
 
           <TrustStrip />

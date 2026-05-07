@@ -9,9 +9,9 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Waterline Growth - Pool Builder Marketing Agency",
+  title: "Waterline Growth - Pool Builder & Remodeler Marketing Agency",
   description:
-    "Lead-driven marketing for swimming pool contractors. We help pool builders grow with Facebook Ads, Google Ads, and digital marketing.",
+    "Full-service digital marketing for swimming pool contractors, builders, and remodelers. We help pool companies grow with Facebook, Instagram, Google, and Local Service Ads — exclusive leads, real results.",
 };
 
 export const viewport = {

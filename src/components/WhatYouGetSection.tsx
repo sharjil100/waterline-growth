@@ -1,28 +1,17 @@
 const items = [
-  {
-    title: "A done-for-you ad machine",
-    body: "Running inside your own accounts — not ours. Built, launched, and optimized by our team.",
-  },
-  {
-    title: "Exclusive leads in your service area",
-    body: "No sharing with 5 other builders. Every lead is yours and yours alone.",
-  },
-  {
-    title: "Fewer tire-kickers",
-    body: 'Targeting and filters aimed at serious pool projects, not people "just getting prices."',
-  },
-  {
-    title: "Clear tracking click → signed job",
-    body: "See exactly how many leads became estimates and how many became signed projects.",
-  },
-  {
-    title: "Realistic budget guidance",
-    body: "We'll help you set a budget so one project can pay for many months of marketing.",
-  },
-  {
-    title: "An engineer-minded team",
-    body: "Plain-English updates from people who care about math and outcomes, not agency jargon.",
-  },
+  "Facebook and Instagram ad campaigns built for pool buyers",
+  "Google Search Ads for homeowners actively looking for pool contractors",
+  "Local Service Ads for local high-intent searches",
+  "A dedicated pool construction and remodel landing page",
+  "Exclusive leads in your service area",
+  "No shared leads with other contractors",
+  "Filters to reduce tire-kickers and bad-fit inquiries",
+  "Fast text follow-up on new leads and missed calls",
+  "Tracking from click to lead to estimate to signed project",
+  "Weekly optimization and reporting",
+  "Clear budget guidance based on your project value",
+  "Campaigns running inside your own ad accounts",
+  "A team focused on signed-project math, not agency jargon",
 ];
 
 export default function WhatYouGetSection() {
@@ -36,61 +25,125 @@ export default function WhatYouGetSection() {
         fontFamily: "var(--font-barlow), Arial, sans-serif",
       }}
     >
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <span className="reveal" style={{
-          display: "inline-block", color: "#1565ff",
-          fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em",
-          textTransform: "uppercase", marginBottom: "16px",
-        }}>
-          What You Get
-        </span>
+      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+        <div style={{ marginBottom: "48px", textAlign: "center" }}>
+          <span
+            className="reveal"
+            style={{
+              display: "inline-block",
+              color: "#1565ff",
+              fontSize: "12px",
+              fontWeight: 700,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              marginBottom: "16px",
+            }}
+          >
+            What You Get
+          </span>
 
-        <h2 className="reveal reveal-d1" style={{
-          fontSize: "clamp(28px, 3.2vw, 46px)",
-          fontWeight: 900, lineHeight: 1.12,
-          margin: "0 0 52px", letterSpacing: "-0.02em", maxWidth: "820px",
-          color: "#111827",
-        }}>
-          Everything you need to turn ad spend into{" "}
-          <span style={{ color: "#1565ff" }}>signed projects.</span>
-        </h2>
+          <h2
+            className="reveal reveal-d1"
+            style={{
+              fontSize: "clamp(28px, 3.4vw, 46px)",
+              fontWeight: 900,
+              lineHeight: 1.12,
+              margin: "0 auto",
+              letterSpacing: "-0.02em",
+              maxWidth: "820px",
+              color: "#0b1e3b",
+            }}
+          >
+            Everything You Need To Turn Ad Spend Into{" "}
+            <span style={{ color: "#1565ff" }}>Signed Projects.</span>
+          </h2>
 
-        <div style={{
-          display: "grid", gap: "16px",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-        }}>
-          {items.map((it, i) => (
-            <div key={it.title} className={`card-lift reveal reveal-d${Math.min(i + 1, 5)}`} style={{
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "14px",
-              padding: "26px 24px",
-              boxShadow: "0 1px 6px rgba(0,0,0,0.05)",
-            }}>
-              <div className="icon-float" style={{
-                width: "40px", height: "40px", borderRadius: "10px",
-                background: "rgba(21,101,255,0.08)",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                marginBottom: "16px",
-              }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565ff" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-              </div>
-              <h3 style={{
-                fontSize: "17px", fontWeight: 800, margin: "0 0 8px",
-                color: "#111827", letterSpacing: "-0.01em",
-              }}>
-                {it.title}
-              </h3>
-              <p style={{
-                color: "#6b7280",
-                fontSize: "14.5px", lineHeight: 1.65, margin: 0,
-              }}>
-                {it.body}
-              </p>
-            </div>
-          ))}
+          <p
+            className="reveal reveal-d2"
+            style={{
+              marginTop: "16px",
+              color: "#6b7280",
+              fontSize: "16px",
+              lineHeight: 1.7,
+              maxWidth: "640px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            With the Pool Project Pipeline System, you get:
+          </p>
+        </div>
+
+        <div
+          className="reveal reveal-d3"
+          style={{
+            background: "#ffffff",
+            border: "1px solid #e5e7eb",
+            borderRadius: "20px",
+            padding: "clamp(24px, 4vw, 40px)",
+            boxShadow: "0 8px 24px rgba(20,40,80,0.05)",
+          }}
+        >
+          <ul
+            style={{
+              listStyle: "none",
+              margin: 0,
+              padding: 0,
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "12px 32px",
+            }}
+          >
+            {items.map((text) => (
+              <li
+                key={text}
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "12px",
+                  padding: "10px 0",
+                  borderBottom: "1px solid #f1f4f9",
+                }}
+              >
+                <span
+                  style={{
+                    width: "24px",
+                    height: "24px",
+                    borderRadius: "50%",
+                    background: "rgba(21,101,255,0.1)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flex: "0 0 auto",
+                    marginTop: "2px",
+                  }}
+                >
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1565ff"
+                    strokeWidth="3.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <span
+                  style={{
+                    color: "#1f2937",
+                    fontSize: "15px",
+                    fontWeight: 500,
+                    lineHeight: 1.55,
+                  }}
+                >
+                  {text}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

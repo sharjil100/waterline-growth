@@ -73,10 +73,13 @@ const features = [
   "Google Search & Local Service Ads",
   "Dedicated pool project landing page",
   "Exclusive leads — never shared",
-  "Lead tracking: click → signed job",
+  "Lead tracking: click → signed project",
   "Fast text follow-up on new leads",
   "Weekly optimization & reporting",
-  "Full ad account ownership (yours)",
+  "Full ad account ownership",
+  "No setup fee",
+  "No long-term contract",
+  "Month-to-month agreement",
 ];
 
 export default function PricingSection() {
@@ -112,14 +115,16 @@ export default function PricingSection() {
             margin: "0 0 14px", letterSpacing: "-0.02em",
             color: "#111827",
           }}>
-            What does it cost?
+            What Does It Cost?
           </h2>
           <p style={{
             color: "#6b7280", fontSize: "16px",
-            margin: "0 auto", maxWidth: "480px",
+            margin: "0 auto", maxWidth: "560px",
             lineHeight: 1.6,
           }}>
-            One simple offer. One simple number. No setup fees and no long-term contracts.
+            One simple offer. One simple number. No setup fees and no long-term
+            contracts. Catching just one extra new build, remodel, or backyard
+            project can pay for many months of the service.
           </p>
         </div>
 
@@ -248,7 +253,7 @@ export default function PricingSection() {
               color: "rgba(255,255,255,0.30)",
               fontSize: "12px", margin: 0,
             }}>
-              No setup fee · Live same day
+              No setup fee · Month-to-month
             </p>
           </div>
 
@@ -275,13 +280,13 @@ export default function PricingSection() {
                 fontSize: "17px", fontWeight: 800, lineHeight: 1.4,
                 margin: "0 0 10px",
               }}>
-                Catching just one extra pool project a year easily pays for many months of the service.
+                One extra new build, remodel, or backyard project pays for many months of the service.
               </h4>
               <p style={{
                 color: "#3b82f6",
                 fontSize: "13.5px", lineHeight: 1.6, margin: 0,
               }}>
-                Even one signed project at $80k–$300k covers many months of the management fee.
+                Even one signed project at $20k–$300k covers months of management.
               </p>
             </div>
 
@@ -297,15 +302,16 @@ export default function PricingSection() {
                 color: "#6b7280",
                 fontSize: "14px", lineHeight: 1.65, marginBottom: "12px",
               }}>
-                You don&apos;t share leads with 5 other builders. You don&apos;t chase junk
-                from Angi or HomeAdvisor. You don&apos;t boost random Facebook posts.
+                You do not share leads with five other contractors. You do not
+                chase junk from Angi or HomeAdvisor. You do not boost random
+                Facebook posts and hope something happens.
               </p>
               <p style={{
                 color: "#111827",
                 fontSize: "14.5px", fontWeight: 700, lineHeight: 1.55, margin: 0,
               }}>
-                You get a system that runs while you&apos;re on the job site, bringing
-                in the projects you actually want.
+                You get a system that runs while you&apos;re on the job site,
+                bringing in the projects you actually want.
               </p>
             </div>
 

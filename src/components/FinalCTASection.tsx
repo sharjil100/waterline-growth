@@ -68,9 +68,9 @@ export default function FinalCTASection() {
               color: "#ffffff",
             }}
           >
-            Ready to turn your slow season into{" "}
+            Ready To Turn Your Slow Season Into{" "}
             <span style={{ color: "rgba(150,210,255,1)" }}>
-              signed pool and backyard projects?
+              Signed Pool Projects?
             </span>
           </h2>
 
@@ -83,8 +83,20 @@ export default function FinalCTASection() {
             }}
           >
             We&rsquo;ll build and run your Pool Project Pipeline System so you
-            can stay on the job site while your marketing runs in the
+            can stay on the job site while your marketing works in the
             background.
+          </p>
+
+          <p
+            style={{
+              color: "rgba(255,255,255,0.85)",
+              fontSize: "15.5px",
+              fontWeight: 600,
+              lineHeight: 1.55,
+              margin: "0 0 14px",
+            }}
+          >
+            In one short call, we will:
           </p>
 
           <ul
@@ -98,9 +110,11 @@ export default function FinalCTASection() {
             }}
           >
             {[
-              "15-minute call — no pitch, no pressure",
-              "We map your service area and capacity",
-              "You get a clear plan, whether you hire us or not",
+              "Map your service area",
+              "Review your project capacity",
+              "Look at the types of jobs you want most",
+              "Identify which channels make sense first",
+              "Give you a clear plan, whether you hire us or not",
             ].map((t) => (
               <li
                 key={t}

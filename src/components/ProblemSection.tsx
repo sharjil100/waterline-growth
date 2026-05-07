@@ -21,19 +21,25 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function ProblemSection() {
   const current = [
-    "Some word-of-mouth, some random website leads",
-    'Maybe a boosted post or a small Google campaign "someone set up"',
-    "No real tracking on what actually turns into signed projects",
+    "Some word-of-mouth",
+    "Some random website leads",
+    "Maybe a boosted post or small Google campaign someone set up",
+    "No clear tracking on what actually turns into signed projects",
+    "No real system for turning online attention into booked estimates",
   ];
   const means = [
-    "You have slow months you shouldn't have",
-    "Competitors show up everywhere online while you disappear",
-    "You end up price-shopped against guys with more reviews and nicer ads",
+    "Lost remodels, resurfacing jobs, and new pool builds",
+    "Slow months you should not have",
+    "Competitors showing up everywhere online while you disappear",
+    "Price shoppers comparing you against contractors with better ads and more reviews",
+    "Wasted time chasing people who were never serious",
+    "No clear idea which leads, ads, or channels are actually producing revenue",
   ];
   const ontop = [
-    'Lead vendors sell the same "quote request" to 3–5 contractors',
-    "You waste time chasing people who already picked someone else",
-    "You're making big-ticket projects fight for scraps of attention online",
+    "Lead vendors sell the same quote request to 3–5 contractors",
+    "Homeowners compare you against whoever replies fastest",
+    "Big-ticket pool projects end up fighting for scraps of online attention",
+    "Missed calls and slow follow-up can turn into lost work",
   ];
 
   return (
@@ -60,9 +66,9 @@ export default function ProblemSection() {
           margin: "0 0 48px", letterSpacing: "-0.02em",
           color: "#ffffff",
         }}>
-          Referrals alone won&apos;t fill a{" "}
-          <span style={{ color: "#60a5fa" }}>$80k–$300k</span>{" "}
-          pipeline forever.
+          Referrals Alone Won&apos;t Fill A{" "}
+          <span style={{ color: "#60a5fa" }}>$20k–$300k</span>{" "}
+          Pool Pipeline Forever.
         </h2>
 
         <div style={{
@@ -90,6 +96,24 @@ export default function ProblemSection() {
             </div>
           ))}
         </div>
+
+        <p
+          className="reveal reveal-d4"
+          style={{
+            marginTop: "40px",
+            color: "rgba(255,255,255,0.85)",
+            fontSize: "clamp(16px, 1.7vw, 19px)",
+            lineHeight: 1.55,
+            fontWeight: 600,
+            letterSpacing: "-0.005em",
+            maxWidth: "900px",
+            borderLeft: "3px solid #60a5fa",
+            paddingLeft: "20px",
+          }}
+        >
+          A single unanswered call on a pool build or major remodel can be
+          your entire monthly marketing budget walking to another contractor.
+        </p>
       </div>
     </section>
   );

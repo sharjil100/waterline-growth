@@ -3,15 +3,15 @@ import MissedCallRevenueCalculator from "@/components/MissedCallRevenueCalculato
 const bullets = [
   {
     title: "Every missed call is a missed bid",
-    body: "One unanswered ring on a $80k inground build is the entire month's marketing budget walking next door.",
+    body: "For pool builders and remodelers, one lost conversation can mean tens of thousands in missed revenue.",
   },
   {
     title: "Built for builders & remodelers",
-    body: "Defaults tuned to real pool economics — not generic home-services averages.",
+    body: "Defaults tuned to real pool economics — new builds, remodels, and resurfacing — not generic home-services averages.",
   },
   {
     title: "Then we plug the leak",
-    body: "Call tracking, fast follow-up, and ad spend pointed at jobs you can actually close.",
+    body: "Call tracking, fast follow-up, and ad spend pointed at projects you can actually close.",
   },
 ];
 
@@ -43,8 +43,9 @@ export default function MissedCallRevenueSection() {
             </h2>
 
             <p className="mt-4 text-[clamp(15px,1.4vw,17px)] leading-[1.65] text-[#5a6b85]">
-              Most pool companies have no idea how much pipeline they bleed
-              every week. Plug in a few numbers — see the damage in seconds.
+              Most pool companies do not know how much pipeline they lose
+              every week from missed calls, slow follow-up, and untracked
+              leads. Plug in a few numbers — see the damage in seconds.
             </p>
 
             <ul className="mt-6 flex flex-col gap-4 text-left mx-auto lg:mx-0 max-w-[440px]">

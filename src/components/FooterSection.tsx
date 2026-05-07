@@ -176,7 +176,7 @@ export default function FooterSection() {
               &copy; 2026 Waterline Growth. All rights reserved.
             </p>
             <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "13px", margin: 0 }}>
-              Exclusive leads &middot; Pool builders only &middot; Month-to-month
+              Exclusive leads &middot; Pool builders &amp; remodelers only &middot; Month-to-month
             </p>
           </div>
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>

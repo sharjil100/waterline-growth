@@ -5,15 +5,19 @@ const faqs = [
   },
   {
     q: "Do I have to learn a bunch of software?",
-    a: "No. We run the tools. You get simple updates and a clear view of leads and signed jobs.",
+    a: "No. We run the tools. You get simple updates and a clear view of leads, estimates, and signed projects.",
   },
   {
     q: "Can I start with just Facebook or just Google?",
-    a: "We recommend starting with both for best coverage, but we'll match your budget and pace.",
+    a: "Yes, but we recommend starting with both for better coverage. Facebook and Instagram help create demand. Google and Local Service Ads capture people already searching. We can match the rollout to your budget and pace.",
+  },
+  {
+    q: "Is this only for new pool builders?",
+    a: "No. The system is built for both pool builders and pool remodelers. We can target new pool construction, major remodels, resurfacing, equipment upgrades, and full backyard projects depending on what you want more of.",
   },
   {
     q: "Is there a long-term contract?",
-    a: "No. It's month-to-month. If it's not paying for itself, you shouldn't stay.",
+    a: "No. It is month-to-month. If it is not paying for itself, you should not stay.",
   },
 ];
 
@@ -43,9 +47,9 @@ export default function FAQSection() {
           margin: "0 0 44px", letterSpacing: "-0.02em",
           color: "#111827",
         }}>
-          Questions{" "}
-          <span style={{ color: "#1565ff" }}>builders ask</span>{" "}
-          before booking.
+          Questions Pool Companies{" "}
+          <span style={{ color: "#1565ff" }}>Ask</span>{" "}
+          Before Booking.
         </h2>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>

@@ -23,18 +23,6 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "I couldn't be happier with my experience with Waterline Growth. The free trial was helpful, but what truly set them apart were the upfront conversations — they presented a clear, thoughtful plan that others didn't. I was initially skeptical that social media could generate real work, but they quickly proved me wrong. They stood out from the competition, helped grow my business, and earned my trust.",
-    name: "Arnie",
-    role: "Pool Builder",
-  },
-  {
-    quote:
-      "Working with Waterline Growth has been a great experience. Their Facebook advertising is driving sales, communication has been excellent, and they've been honest and responsive every step of the way. I would absolutely recommend them.",
-    name: "Ken",
-    role: "Remodeler",
-  },
-  {
-    quote:
       "Working with Waterline Growth has completely transformed my business. Before partnering with them, I struggled to generate consistent leads. Now, I receive a steady stream of high-quality prospects every week. Their digital marketing strategy, communication, and results have far exceeded my expectations.",
     name: "Tracy",
     role: "Pool Builder",
@@ -245,7 +233,7 @@ export default function ProofSection() {
             maxWidth: "760px",
           }}
         >
-          Results you can reach, too.
+          Results You Can Reach, Too.
         </h2>
 
         <p
@@ -258,7 +246,7 @@ export default function ProofSection() {
             maxWidth: "560px",
           }}
         >
-          Let the builders we work with speak for themselves.
+          Let the pool companies we work with speak for themselves.
         </p>
 
         {/* Carousel stage */}

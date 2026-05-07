@@ -2,7 +2,7 @@ const projects = [
   {
     label: "New Builds",
     heading: "Custom Pool Construction",
-    body: "Reach homeowners actively planning a new pool — not just browsing. We target buyers with the yard space, budget, and intent to build.",
+    body: "Reach homeowners actively planning a new pool. These are people with the yard space, budget, and intent to build.",
     stat: "$80k–$300k",
     statLabel: "avg. project value",
     icon: (
@@ -16,7 +16,7 @@ const projects = [
   {
     label: "Remodels",
     heading: "Major Renovations & Remodels",
-    body: "Pool replasters, equipment upgrades, and full backyard makeovers. Homeowners who already have a pool and want it transformed.",
+    body: "Reach homeowners who already have a pool and want to upgrade it — resurfacing, replastering, tile, coping, equipment upgrades, lighting, automation, and full pool renovations.",
     stat: "$20k–$80k",
     statLabel: "avg. project value",
     icon: (
@@ -28,7 +28,7 @@ const projects = [
   {
     label: "Outdoor Living",
     heading: "Full Backyard Transformations",
-    body: "Outdoor kitchens, pergolas, fire features, and full landscape builds. High-ticket buyers who want the complete outdoor experience.",
+    body: "Reach homeowners who want the complete outdoor experience — outdoor kitchens, pergolas, fire features, decking, landscaping, and full backyard builds.",
     stat: "$50k–$200k",
     statLabel: "avg. project value",
     icon: (
@@ -67,16 +67,17 @@ export default function PoolShowcaseSection() {
             margin: "0 0 16px", letterSpacing: "-0.02em",
             color: "#ffffff", maxWidth: "720px",
           }}>
-            New builds. Remodels.{" "}
-            <span style={{ color: "#1565ff" }}>Real backyard transformations.</span>
+            New Builds. Remodels.{" "}
+            <span style={{ color: "#1565ff" }}>Real Backyard Transformations.</span>
           </h2>
           <p style={{
             color: "rgba(255,255,255,0.50)",
             fontSize: "16px", lineHeight: 1.65,
-            maxWidth: "560px", margin: 0,
+            maxWidth: "640px", margin: 0,
           }}>
-            Ads built for the projects you actually want — not $500 cleanups or
-            shared quote requests from five other builders.
+            Waterline Growth helps pool companies attract the projects they
+            actually want — not small cleanup jobs, shared quote requests, or
+            low-intent leads.
           </p>
         </div>
 
